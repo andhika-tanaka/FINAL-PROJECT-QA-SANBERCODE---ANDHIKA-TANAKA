@@ -14,7 +14,7 @@ class OrangeHRMAdminUsers (unittest.TestCase):
         self.driver = webdriver.Chrome(service = Service(ChromeDriverManager().install()))
         self.dashboardUrl = "https://opensource-demo.orangehrmlive.com/index.php/dashboard"
         self.loginUrl = "https://opensource-demo.orangehrmlive.com/index.php/auth/login"
-        self.usersUrl = "https://opensource-demo.orangehrmlive.com/index.php/admin/viewSystemUsers"
+        self.mytimesheetsUrl = "https://opensource-demo.orangehrmlive.com/index.php/time/viewMyTimesheet"
         
     def user_login(self):
         driver = self.driver
@@ -32,29 +32,29 @@ class OrangeHRMAdminUsers (unittest.TestCase):
         wait = WebDriverWait(driver, 10)
         wait.until(lambda driver: driver.current_url != self.loginUrl)
         
-    def admin_users_page(self):
+    def my_timesheets_page(self):
         driver = self.driver
         action = ActionChains(driver)
         
         self.user_login()
 
-        menuAdmin = driver.find_element(By.XPATH, "//b[normalize-space()='Admin']")
-        subMenuUserManagement = driver.find_element(By.XPATH, "//a[@id='menu_admin_UserManagement']")
-        subMenuUsers = driver.find_element(By.XPATH, "//a[@id='menu_admin_viewSystemUsers']")
+        menuTime = driver.find_element(By.XPATH, "//b[normalize-space()='Time']")
+        submenuTimeSheets = driver.find_element(By.XPATH, "//a[@id='menu_time_Timesheets']")
+        submenuMyTimesheets = driver.find_element(By.XPATH, "//a[@id='menu_time_viewMyTimesheet']")
 
-        action.move_to_element(menuAdmin).perform()
-        action.move_to_element(subMenuUserManagement).perform()
-        action.move_to_element(subMenuUsers).click().perform()
+        action.move_to_element(menuTime).perform()
+        action.move_to_element(submenuTimeSheets).perform()
+        action.move_to_element(submenuMyTimesheets).click().perform()
 
-    def test_a_check_admin_users_page (self): 
+    def test_a_check_my_timesheets_page (self): 
         driver = self.driver
 
-        self.admin_users_page()
+        self.my_timesheets_page()
 
-        usersPageTitle = driver.find_element(By.XPATH, "//*[@id='systemUser-information']/div[1]/h1").text
-        self.assertIn("System Users", usersPageTitle,)
+        mytimesheetsTitlePage = driver.find_element(By.XPATH, "//*[@id='timesheet']/div/div[1]/h3").text
+        self.assertIn("Timesheet for Week", mytimesheetsTitlePage)
         expectedUrl= driver.current_url
-        self.assertAlmostEqual(expectedUrl, self.usersUrl)
+        self.assertIn(expectedUrl, self.mytimesheetsUrl)
 
     def tearDown(self):
         self.driver.close()

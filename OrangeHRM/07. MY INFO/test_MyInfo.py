@@ -14,7 +14,7 @@ class OrangeHRMAdminUsers (unittest.TestCase):
         self.driver = webdriver.Chrome(service = Service(ChromeDriverManager().install()))
         self.dashboardUrl = "https://opensource-demo.orangehrmlive.com/index.php/dashboard"
         self.loginUrl = "https://opensource-demo.orangehrmlive.com/index.php/auth/login"
-        self.usersUrl = "https://opensource-demo.orangehrmlive.com/index.php/admin/viewSystemUsers"
+        self.myinfoUrl = "https://opensource-demo.orangehrmlive.com/index.php/pim/viewMyDetails"
         
     def user_login(self):
         driver = self.driver
@@ -32,29 +32,25 @@ class OrangeHRMAdminUsers (unittest.TestCase):
         wait = WebDriverWait(driver, 10)
         wait.until(lambda driver: driver.current_url != self.loginUrl)
         
-    def admin_users_page(self):
+    def my_info_page(self):
         driver = self.driver
         action = ActionChains(driver)
         
         self.user_login()
 
-        menuAdmin = driver.find_element(By.XPATH, "//b[normalize-space()='Admin']")
-        subMenuUserManagement = driver.find_element(By.XPATH, "//a[@id='menu_admin_UserManagement']")
-        subMenuUsers = driver.find_element(By.XPATH, "//a[@id='menu_admin_viewSystemUsers']")
+        menuMyInfo = driver.find_element(By.XPATH, "//b[normalize-space()='My Info']")
 
-        action.move_to_element(menuAdmin).perform()
-        action.move_to_element(subMenuUserManagement).perform()
-        action.move_to_element(subMenuUsers).click().perform()
+        action.move_to_element(menuMyInfo).click().perform()
 
-    def test_a_check_admin_users_page (self): 
+    def test_a_check_my_info_page (self): 
         driver = self.driver
 
-        self.admin_users_page()
+        self.my_info_page()
 
-        usersPageTitle = driver.find_element(By.XPATH, "//*[@id='systemUser-information']/div[1]/h1").text
-        self.assertIn("System Users", usersPageTitle,)
+        personalDetailsTitlePage = driver.find_element(By.XPATH, "//*[@id='pdMainContainer']/div[1]/h1").text
+        self.assertIn("Personal Details", personalDetailsTitlePage)
         expectedUrl= driver.current_url
-        self.assertAlmostEqual(expectedUrl, self.usersUrl)
+        self.assertIn(expectedUrl, self.myinfoUrl)
 
     def tearDown(self):
         self.driver.close()

@@ -14,7 +14,7 @@ class OrangeHRMAdminUsers (unittest.TestCase):
         self.driver = webdriver.Chrome(service = Service(ChromeDriverManager().install()))
         self.dashboardUrl = "https://opensource-demo.orangehrmlive.com/index.php/dashboard"
         self.loginUrl = "https://opensource-demo.orangehrmlive.com/index.php/auth/login"
-        self.usersUrl = "https://opensource-demo.orangehrmlive.com/index.php/admin/viewSystemUsers"
+        self.vacanciesUrl = "https://opensource-demo.orangehrmlive.com/index.php/recruitment/viewJobVacancy"
         
     def user_login(self):
         driver = self.driver
@@ -32,29 +32,27 @@ class OrangeHRMAdminUsers (unittest.TestCase):
         wait = WebDriverWait(driver, 10)
         wait.until(lambda driver: driver.current_url != self.loginUrl)
         
-    def admin_users_page(self):
+    def recruitment_vacancy_page(self):
         driver = self.driver
         action = ActionChains(driver)
         
         self.user_login()
 
-        menuAdmin = driver.find_element(By.XPATH, "//b[normalize-space()='Admin']")
-        subMenuUserManagement = driver.find_element(By.XPATH, "//a[@id='menu_admin_UserManagement']")
-        subMenuUsers = driver.find_element(By.XPATH, "//a[@id='menu_admin_viewSystemUsers']")
+        menuRecruitment = driver.find_element(By.XPATH, "//b[normalize-space()='Recruitment']")
+        submenuVacancy = driver.find_element(By.XPATH, "//a[@id='menu_recruitment_viewJobVacancy']")
 
-        action.move_to_element(menuAdmin).perform()
-        action.move_to_element(subMenuUserManagement).perform()
-        action.move_to_element(subMenuUsers).click().perform()
+        action.move_to_element(menuRecruitment).perform()
+        action.move_to_element(submenuVacancy).click().perform()
 
-    def test_a_check_admin_users_page (self): 
+    def test_a_check_recruitment_vacancy_page (self): 
         driver = self.driver
 
-        self.admin_users_page()
+        self.recruitment_vacancy_page()
 
-        usersPageTitle = driver.find_element(By.XPATH, "//*[@id='systemUser-information']/div[1]/h1").text
-        self.assertIn("System Users", usersPageTitle,)
+        vacanciesTitlePage = driver.find_element(By.XPATH, "//*[@id='srchVacancy']/div[1]/h1").text
+        self.assertIn("Vacancies", vacanciesTitlePage)
         expectedUrl= driver.current_url
-        self.assertAlmostEqual(expectedUrl, self.usersUrl)
+        self.assertIn(expectedUrl, self.vacanciesUrl)
 
     def tearDown(self):
         self.driver.close()
