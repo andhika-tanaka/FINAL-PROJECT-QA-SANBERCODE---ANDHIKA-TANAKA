@@ -1,0 +1,1814 @@
+case_id,title,suite,suite_id,assignee,time_spent_ms,status,finish_time,steps,steps_input_data,steps_expected_result,steps_status,comment,priority,severity,automation,type,tags,step_comments,case_parameter
+1,"Check Login Page",Login,1,"andhika tanaka",4000,Passed,"2022-08-01 21:32:55","1. Go to [OrangeHRM Login Page](https://opensource-demo.orangehrmlive.com/index.php/auth/login)
+","1. 
+","1. Redirect To Login Page
+",,,High,Normal,"Not automated",Functional,,,
+1,"Check Login Page",Login,1,"andhika tanaka",0,Retest,"2022-08-02 06:29:53","1. Go to [OrangeHRM Login Page](https://opensource-demo.orangehrmlive.com/index.php/auth/login)
+","1. 
+","1. Redirect To Login Page
+",,,High,Normal,"Not automated",Functional,,,
+1,"Check Login Page",Login,1,"andhika tanaka",45000,Passed,"2022-08-02 06:30:15","1. Go to [OrangeHRM Login Page](https://opensource-demo.orangehrmlive.com/index.php/auth/login)
+","1. 
+","1. Redirect To Login Page
+","1. Passed
+",,High,Normal,"Not automated",Functional,,"1. ",
+2,"Check Login Using Valid Username and Password",Login,1,"andhika tanaka",95000,Passed,"2022-08-01 21:34:48","1. Go to [OrangeHRM Login Page](https://opensource-demo.orangehrmlive.com/index.php/auth/login)
+2. Fill Login Form
+3. Click Button [Login]
+","1. 
+2. * Username : Admin
+* Password : admin123
+3. 
+","1. Redirect to Login Page
+2. 
+3. Successfully Login and redirect to Dashboard Page
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+3,"Check Login Using Invalid Username",Login,1,"andhika tanaka",42000,Passed,"2022-08-01 21:35:32","1. Go to [OrangeHRM Login Page](https://opensource-demo.orangehrmlive.com/index.php/auth/login)
+2. Fill Login Form
+3. Click Button [Login]
+","1. 
+2. * Username : FalseAdmin
+* Password : admin123
+3. 
+","1. Redirect to Login Page
+2. 
+3. Failed Login and Show Error Message
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+4,"Check Login Using Invalid Password",Login,1,"andhika tanaka",40000,Passed,"2022-08-01 21:36:13","1. Go to [OrangeHRM Login Page](https://opensource-demo.orangehrmlive.com/index.php/auth/login)
+2. Fill Login Form
+3. Click Button [Login]
+","1. 
+2. * Username : Admin
+* Password : admin456
+3. 
+","1. Redirect to Login Page
+2. 
+3. Failed Login and Show Error Message
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+5,"Check Login Using Empty Username",Login,1,"andhika tanaka",46000,Passed,"2022-08-01 21:37:01","1. Go to [OrangeHRM Login Page](https://opensource-demo.orangehrmlive.com/index.php/auth/login)
+2. Fill Login Form
+3. Click Button [Login]
+","1. 
+2. * Password : admin123
+3. 
+","1. Redirect to Login Page
+2. 
+3. Failed Login and Show Error Message
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+351,"Check Login Using Empty Password",Login,1,"andhika tanaka",31000,Passed,"2022-08-01 21:38:03","1. Go to [OrangeHRM Login Page](https://opensource-demo.orangehrmlive.com/index.php/auth/login)
+2. Fill Login Form
+3. Click Button [Login]
+","1. 
+2. * Username : admin
+3. 
+","1. Redirect to Login Page
+2. 
+3. Failed Login and Show Error Message
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+7,"Check When USER Click Submenu [Users]",Users,20,"andhika tanaka",63000,Passed,"2022-08-01 21:39:41","1. Click Submenu [Users]
+","1. 
+","1. Redirected to [Users Page](https://opensource-demo.orangehrmlive.com/index.php/admin/viewSystemUsers)
+","1. Passed
+",,High,Normal,"Not automated",Functional,,"1. ",
+8,"Check When USER Search [Users] Data Using Username",Users,20,"andhika tanaka",114000,Passed,"2022-08-01 21:41:31","1. Fill username textbox
+2. Click Button [Search]
+","1. Username : ELawrence
+2. 
+","1. 
+2. [Users] with username ELawrence will be shown in the list
+","1. Passed
+2. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. ",
+9,"Check When USER Search [Users] Data Using User Role",Users,20,"andhika tanaka",34000,Passed,"2022-08-01 21:42:06","1. Select User Role From Dropdown Menu
+2. Click Button [Search]
+","1. User Role : Admin
+2. 
+","1. 
+2. [Users] with User Role Admin will be shown in the list
+","1. Passed
+2. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. ",
+10,"Check When USER Search [Users] Data Using Employee Name",Users,20,"andhika tanaka",50000,Passed,"2022-08-01 21:42:59","1. Fill Employee Name textbox
+2. Click Button [Search]
+","1. Employee Name : Eula Lawrence
+2. 
+","1. 
+2. [Users] with Employee Name Eula Lawrence will be shown in the list
+","1. Passed
+2. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. ",
+11,"Check When USER Search [Users] Data Using Status",Users,20,"andhika tanaka",61000,Passed,"2022-08-01 21:44:02","1. Select Status From Dropdown Menu
+2. Click Button [Search]
+","1. Status : Enabled
+2. 
+","1. 
+2. [Users] with Status Enabled will be shown in the list
+","1. Passed
+2. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. ",
+12,"Check When USER Click Button [Reset] in [Users] Page",Users,20,"andhika tanaka",76000,Passed,"2022-08-01 21:45:46","1. Fill Search Form
+2. Click Button [Reset]
+","1. Credentials:
+
+* Username : ELawrence
+* User Role : Admin
+* Employee Name : Eula Lawrence
+* Status : Enable
+2. 
+","1. 
+2. Search Form will set all value with default value
+
+* Username : \<empty>
+* User Role : All
+* Employee Name : \<empty>
+* Status : All
+","1. Passed
+2. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. ",
+13,"Check When USER Add New [Users]",Users,20,"andhika tanaka",134000,Passed,"2022-08-01 21:47:46","1. Click Button [Add]
+2. Fill Add User Form
+3. Click Button [Save]
+","1. 
+2. * User Role : ESS
+* Employee Name : Mona Megistus
+* Username : MonaMeg
+* Status : Enabled
+* Password : admin123
+* Confirm Password : admin123
+3. 
+","1. Redirect to [Add User Page](https://opensource-demo.orangehrmlive.com/index.php/admin/saveSystemUser)
+2. 
+3. * Data is saved
+* Redirect to [Users Page](https://opensource-demo.orangehrmlive.com/index.php/admin/viewSystemUsers)
+","2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"2. 
+3. ",
+14,"Check When USER Edit Existing [Users]",Users,20,"andhika tanaka",62000,Passed,"2022-08-01 21:48:49","1. Click Username
+2. Click Button [Edit]
+3. Fill Edit User Form
+4. Click Button [Save]
+","1. Username : MonaMeg
+2. 
+3. * User Role : Admin
+* Employee Name : Mona Megistus
+* Username : MonaMeg
+* Status : Enabled
+* Password : admin123
+* Confirm Password : admin123
+4. 
+","1. Redirect to User Detail Page
+2. All Field in Edit [Users] Form become Enabled
+3. 
+4. * Data is saved
+* Redirect to [Users Page](https://opensource-demo.orangehrmlive.com/index.php/admin/viewSystemUsers)
+","1. Passed
+2. Passed
+3. Passed
+4. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. 
+4. ",
+15,"Check When USER Delete Existing [Users]",Users,20,"andhika tanaka",100000,Passed,"2022-08-01 21:50:51","1. Check the Checkbox on the left of Username
+2. Click Button [Delete]
+3. Click Button [OK]
+","1. Username : MonaMeg
+2. 
+3. 
+","1. 
+2. Delete Confirmation Popup Appear
+3. * Succesfully Delete Username : MonaMeg
+* Redirect to [Users Page](https://opensource-demo.orangehrmlive.com/index.php/admin/viewSystemUsers)
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+120,"Check When USER Click Submenu [Employee List]","Employee List",42,"andhika tanaka",13000,Passed,"2022-08-01 21:51:06","1. Click Submenu [Employee List]
+","1. 
+","1. Redirected to [Employee List Page](https://opensource-demo.orangehrmlive.com/index.php/pim/viewEmployeeList/reset/1)
+","1. Passed
+",,High,Normal,"Not automated",Functional,,"1. ",
+121,"Check When USER Search [Employee List] Data Using Employee Name","Employee List",42,"andhika tanaka",69000,Passed,"2022-08-01 21:52:16","1. Fill textbox Employee Name
+2. Click Button [Search]
+","1. Employee Name : Eula Lawrence
+2. 
+","1. 
+2. [Employee] with Employee Name Eula Lawrence will be shown in the list
+","1. Passed
+2. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. ",
+122,"Check When USER Search [Employee List] Data Using ID","Employee List",42,"andhika tanaka",39000,Passed,"2022-08-01 21:52:56","1. Fill textbox Id
+2. Click Button [Search]
+","1. Id : 0272
+2. 
+","1. 
+2. [Employee] with Id 0272 will be shown in the list
+","1. Passed
+2. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. ",
+123,"Check When USER Search [Employee List] Data Using Employment Status","Employee List",42,"andhika tanaka",181000,Passed,"2022-08-01 21:56:07","1. Select [Employment Status] from Dropdown Menu
+2. Click Button [Search]
+","1. Employment Status : Full-Time Probation
+2. 
+","1. 
+2. [Employee] with Employment Status Full-Time Probation will be shown in the list
+","1. Passed
+2. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. ",
+124,"Check When USER Search [Employee List] Data Using Include","Employee List",42,"andhika tanaka",48000,Passed,"2022-08-01 21:56:57","1. Select [Include] from Dropdown Menu
+2. Click Button [Search]
+","1. Include : Current Employees Only
+2. 
+","1. 
+2. [Employee] with Include Current Employees Only will be shown in the list
+","1. Passed
+2. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. ",
+125,"Check When USER Search [Employee List] Data Using Supervisor Name","Employee List",42,"andhika tanaka",45000,Passed,"2022-08-01 21:57:45","1. Fill Textbox [Supervisor Name]
+2. Click Button [Search]
+","1. Supervisor Name : Aaliyah Haq
+2. 
+","1. 
+2. [Employee] with Supervisor Name Aaliyah Haq will be shown in the list
+","1. Passed
+2. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. ",
+126,"Check When USER Search [Employee List] Data Using Job Title","Employee List",42,"andhika tanaka",114000,Passed,"2022-08-01 21:59:43","1. Select [Job Title] from Dropdown Menu
+2. Click Button [Search]
+","1. Job Title : HR Associate
+2. 
+","1. 
+2. [Employee] with Job Title Automation Tester will be shown in the list
+","1. Passed
+2. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. ",
+127,"Check When USER Search [Employee List] Data Using Sub Unit","Employee List",42,"andhika tanaka",19000,Passed,"2022-08-01 22:00:27","1. Select [Sub Unit] from Dropdown Menu
+2. Click Button [Search]
+","1. Sub Unit : Quality Assurance
+2. 
+","1. 
+2. [Employee] with Sub Unit Quality Assurance will be shown in the list
+","1. Passed
+2. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. ",
+128,"Check When USER Click Button [Reset] in [Employee List] Page","Employee List",42,"andhika tanaka",61000,Passed,"2022-08-01 22:01:30","1. Fill [Employee Information] Form
+2. Click Button [Reset]
+","1. 
+2. 
+","1. 
+2. [Employee Information] Form will return to default value
+","1. Passed
+2. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. ",
+129,"Check When USER Add New [Employee List]","Employee List",42,"andhika tanaka",82000,Passed,"2022-08-01 22:02:42","1. Click Button [Add]
+2. Fill Add [Employee] Form
+3. Click Button [Save]
+","1. 
+2. * First name : Medusa
+* Last name : Carl
+3. 
+","1. 
+2. 
+3. * Data is saved
+* Redirect to Personal Detail Page
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+130,"Check When USER Edit Existing [Employee List]","Employee List",42,"andhika tanaka",153000,Passed,"2022-08-01 22:05:34","1. Click [Employee] Data From List
+2. Click Button [Edit]
+3. Fill Edit [Employee] Form
+4. Click Button [Save]
+","1. first name : medusa
+last name : carl
+2. 
+3. * Gender : Female
+* Nationality : Afghan
+4. 
+","1. Redirect to [medusa carl] Data Edit Form
+2. 
+3. 
+4. * Data is saved
+* Reload Page
+","1. Passed
+2. Passed
+3. Passed
+4. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. 
+4. ",
+131,"Check When USER Delete Existing [Employee List]","Employee List",42,"andhika tanaka",70000,Passed,"2022-08-01 22:06:45","1. Check the Checkbox on the left of [Employee]
+2. Click Button [Delete]
+3. Click Button [OK]
+","1. first name : medusa
+last name : carey
+2. 
+3. 
+","1. 
+2. Delete Confirmation Popup Appear
+3. * Successfully delete existing data
+* Return to previous page
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+147,"Check When USER Click Submenu  [Add Entitlements]","Add Entitlements",53,"andhika tanaka",51000,Passed,"2022-08-01 22:08:16","1. Click Submenu [Add Entitlements]
+","1. 
+","1. Redirect to [Add Leave Entitlements Page](https://opensource-demo.orangehrmlive.com/index.php/leave/addLeaveEntitlement)
+","1. Passed
+",,High,Normal,"Not automated",Functional,,"1. ",
+148,"Check When USER Add New Entitlements","Add Entitlements",53,"andhika tanaka",109000,Passed,"2022-08-01 22:10:07","1. Fill Add [Leave Entitlement] Form
+2. Click Button [Save]
+","1. * Employee : Eula Lawrence
+* Leave Type : US - Personal
+* Leave Period : 2022-01-01 - 2022-12-31
+* Entitlements : 12
+2. 
+","1. 
+2. * Data is saved
+* Redirect to [Employee Leave Entitlement](https://opensource-demo.orangehrmlive.com/index.php/leave/viewLeaveEntitlements/savedsearch/1)
+","1. Passed
+2. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. ",
+149,"Check When USER Click Submenu [Employee Entitlements]","Employee Entitlements",54,"andhika tanaka",44000,Passed,"2022-08-01 22:10:53","1. Click Submenu [Employee Entitlements]
+","1. 
+","1. Redirect to [Employee Leave Entitlements Page](https://opensource-demo.orangehrmlive.com/index.php/leave/viewLeaveEntitlements/reset/1)
+",,,High,Normal,"Not automated",Functional,,,
+150,"Check When USER Search [Employee Entitlements] Data","Employee Entitlements",54,"andhika tanaka",139000,Passed,"2022-08-02 03:00:25","1. Fill the [Leave Entitlement] Search Form
+2. Click Button [Search]
+","1. * Employee : Eula Lawrence
+* Leave Type : All
+* Leave Period : 2022-01-01 - 2022-12-31
+2. 
+","1. 
+2. Data that met input data requirement will be shown in the list
+","1. Passed
+2. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. ",
+151,"Check When USER Add New [Employee Entitlements]","Employee Entitlements",54,"andhika tanaka",215000,Passed,"2022-08-02 03:04:02","1. Click Button [Add]
+2. Fill Add [Leave Entitlement] Form
+3. Click Button [Save]
+","1. 
+2. * Employee : Eula Lawrence
+* Leave Type : US - Vacation
+* Leave Period : 2022-01-01 - 2022-12-31
+* Entitlements : 12
+3. 
+","1. 
+2. 
+3. * Data is saved
+* Redirect to previous page
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+152,"Check When USER Edit Existing [Employee Entitlements]","Employee Entitlements",54,"andhika tanaka",88000,Passed,"2022-08-02 03:05:32","1. Click [Leave Entitlement] Data From List
+2. Fill Edit [Leave Entitlement] Form
+3. Click Button [Save]
+","1. 
+2. * Leave Period : 2022-01-01 - 2022-12-31
+* Entitlements : 10
+3. 
+","1. Redirect to [Leave Entitlement] Data Edit Form
+2. 
+3. * Data is saved
+* Redirect to [Previous Page]
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+153,"Check When USER Delete Existing [Employee Entitlements]","Employee Entitlements",54,"andhika tanaka",88000,Passed,"2022-08-02 03:07:02","1. Check the Checkbox on the left of [Employee Entitlements]
+2. Click Button [Delete]
+3. Click Button [OK]
+","1. Leave Type : US - Vacation
+2. 
+3. 
+","1. 
+2. Delete Confirmation Popup Appear
+3. * Successfully delete existing data
+* Return to previous page
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+154,"Check When USER Click Submenu [My Entitlements]","My Entitlements",55,"andhika tanaka",61000,Passed,"2022-08-02 03:08:36","1. Click Submenu [My Entitlements]
+","1. 
+","1. Redirect to [My Leave Entitlements Page](https://opensource-demo.orangehrmlive.com/index.php/leave/viewMyLeaveEntitlements/reset/1)
+","1. Passed
+",,High,Normal,"Not automated",Functional,,"1. ",
+155,"Check When USER Search [My Entitlements] Data","My Entitlements",55,"andhika tanaka",146000,Passed,"2022-08-02 03:15:49","1. Fill the [My Entitlements] Search Form
+2. Click Button [Search]
+","1. Leave Type : US - Vacation
+leave Period : 2022-01-01 - 2022-12-31
+2. 
+","1. 
+2. Data that met input data requirement will be shown in the list
+","1. Passed
+2. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. ",
+156,"Check When USER Add New [My Entitlements]","My Entitlements",55,"andhika tanaka",61000,Passed,"2022-08-02 03:15:55","1. Click Button [Add]
+2. Fill Add [Leave Entitlement] Form
+3. Click Button [Save]
+","1. 
+2. * Employee : Eula Lawrence
+* Leave Type : CAN - FMLA
+* Leave Period : 2022-01-01 - 2022-09-02
+* Entitlements : 12
+3. 
+","1. 
+2. 
+3. * Data is saved
+* Redirect to previous page
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+157,"Check When USER Edit Existing [My Entitlements]","My Entitlements",55,"andhika tanaka",109000,Passed,"2022-08-02 03:38:45","1. Click [Leave Entitlement] Data From List
+2. Click Button [Edit]
+3. Fill Edit [Leave Entitlement] Form
+4. Click Button [Save]
+","1. 
+2. 
+3. * Leave Period : 2022-01-01 - 2022-09-02
+* Entitlements : 11
+4. 
+","1. Redirect to [Leave Entitlement] Data Edit Form
+2. 
+3. 
+4. * Data is saved
+* Redirect to [Previous Page]
+","1. Passed
+2. Passed
+3. Passed
+4. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. 
+4. ",
+158,"Check When USER Delete Existing [My Entitlements]","My Entitlements",55,"andhika tanaka",101000,Passed,"2022-08-02 03:39:51","1. Check the Checkbox on the left of [My Entitlements]
+2. Click Button [Delete]
+3. Click Button [OK]
+","1. Leave Type : US - Vacation
+2. 
+3. 
+","1. 
+2. Delete Confirmation Popup Appear
+3. * Successfully delete existing data
+* Return to previous page
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+181,"Check When USER Click Submenu [My Timesheets]","My Timesheets",67,"andhika tanaka",2000,Passed,"2022-08-02 03:08:46","1. Click Submenu [My Timesheets]
+","1. 
+","1. Redirect to [My Timesheets Page](https://opensource-demo.orangehrmlive.com/index.php/time/viewMyTimesheet)
+",,,High,Normal,"Not automated",Functional,,,
+182,"Check When USER Edit [My Timesheets]","My Timesheets",67,"andhika tanaka",115000,Passed,"2022-08-02 03:41:50","1. Click Button [Edit]
+2. Fill Edit [Timesheets] Form
+3. Click Button [Save]
+","1. 
+2. * Project : ACME Ltd - ACME Ltd
+* Activity Name : Administration
+* Mon - Fri : 8
+* Sat- Sun : 0
+3. 
+","1. 
+2. 
+3. * Data is saved
+* Redirect to [Previous Page]
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+183,"Check When USER Click Button [Submit] in [My Timesheets] Page","My Timesheets",67,"andhika tanaka",37000,Passed,"2022-08-02 03:42:29","1. Click Button Submit
+","1. 
+","1. * Data is Saved
+* Page Reload
+* Status : Submitted
+","1. Passed
+",,High,Normal,"Not automated",Functional,,"1. ",
+184,"Check When User Click Submenu [Employee Timesheets]","Employee Timesheets",68,"andhika tanaka",5000,Passed,"2022-08-02 03:08:55","1. Click Submenu [Employee Timesheets]
+","1. 
+","1. Redirect to [Employee Timesheets Page](https://opensource-demo.orangehrmlive.com/index.php/time/viewEmployeeTimesheet)
+","1. Passed
+",,High,Normal,"Not automated",Functional,,"1. ",
+185,"Check When User Search [Employee Timesheets] Data","Employee Timesheets",68,"andhika tanaka",483000,Passed,"2022-08-02 03:52:44","1. Fill Textbox [Employee Name]
+2. Click Button [Search]
+","1. Employee Name : Eula Lawrence
+2. 
+","1. 
+2. [Employee Timesheet] with Employee Name Eula Lawrence will be shown in the list
+","1. Passed
+2. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. ",
+186,"Check When USER View [Employee Timesheets] Data","Employee Timesheets",68,"andhika tanaka",53000,Passed,"2022-08-02 03:53:32","1. Click [View] on the Right Side of The List
+","1. Employee Name : Eula Lawrence
+","1. Redirect to Detailed Timesheets of Employee With Employee Name : Eula Lawrence
+","1. Passed
+",,High,Normal,"Not automated",Functional,,"1. ",
+187,"Check When USER Edit Viewed [Employee Timesheets]","Employee Timesheets",68,"andhika tanaka",86000,Passed,"2022-08-02 03:54:54","1. Click Button [Edit]
+2. Fill Edit [name] Form
+3. Click Button [Save]
+","1. 
+2. * Mon - Fri : 10
+* Sat - Sun : 1
+3. 
+","1. 
+2. 
+3. * Data is saved
+* Redirect to [Previous Page]
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+188,"Check When USER Accept Viewed [Employee Timesheets]","Employee Timesheets",68,"andhika tanaka",39000,Passed,"2022-08-02 03:55:33","1. Click Button [Accept]
+","1. 
+","1. Status changed to [Accepted]
+","1. Passed
+",,High,Normal,"Not automated",Functional,,"1. ",
+189,"Check When USER Reject Viewed [Employee Timesheets]","Employee Timesheets",68,"andhika tanaka",57000,Passed,"2022-08-02 03:56:28","1. Click Button [Reject]
+","1. 
+","1. Status changed to [Rejected]
+","1. Passed
+",,High,Normal,"Not automated",Functional,,"1. ",
+229,"Check When USER Click Submenu [Vacancies]",Vacancies,80,"andhika tanaka",3000,Passed,"2022-08-02 03:09:08","1. Click Submenu [Vacancies]
+","1. 
+","1. Redirect to [Vacancies Page](https://opensource-demo.orangehrmlive.com/index.php/recruitment/viewJobVacancy)
+","1. Passed
+",,High,Normal,"Not automated",Functional,,"1. ",
+230,"Check When USER Search [Vacancies] Data",Vacancies,80,"andhika tanaka",2433000,Passed,"2022-08-02 06:23:58","1. Fill the [Vacancies] Search Form
+2. Click Button [Search]
+","1. Job Title : QA Lead
+Vacancy : Senior QA Lead
+Hiring Manager : All
+Status : All
+2. 
+","1. 
+2. Data that met input data requirement will be shown in the list
+","1. Passed
+2. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. ",
+231,"Check When USER Add New [Vacancies]",Vacancies,80,"andhika tanaka",142000,Passed,"2022-08-02 06:26:22","1. Click Button [Add]
+2. Fill Add [Job Vacancy] Form
+3. Click Button [Save]
+","1. 
+2. Job Title : Automation Tester
+Vacancy Name : Junior Automation Tester
+Hiring Manager : Admin A
+3. 
+","1. 
+2. 
+3. * Data is saved
+* Reload Page
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+232,"Check When USER Edit Existing [Vacancies]",Vacancies,80,"andhika tanaka",119000,Passed,"2022-08-02 06:33:56","1. Click [Vacancies] Data From List
+2. Click Button [Edit]
+3. Fill Edit [Vacancies] Form
+4. Click Button [Save]
+","1. Vacancy Name : Junior Software Tester
+2. 
+3. Vacancy Name : Senior Software Tester
+4. 
+","1. Redirect to [Vacancies] Data Edit Form
+2. 
+3. 
+4. * Data is saved
+* Reload Page
+","1. Passed
+2. Passed
+3. Passed
+4. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. 
+4. ",
+233,"Check When USER Delete Existing [Vacancies]",Vacancies,80,"andhika tanaka",70000,Passed,"2022-08-02 06:35:09","1. Check the Checkbox on the left of [Vacancies]
+2. Click Button [Delete]
+3. Click Button [OK]
+","1. Vacancy Name : Senior Software Tester
+2. 
+3. 
+","1. 
+2. Delete Confirmation Popup Appear
+3. * Successfully delete existing data
+* Reload Page
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+234,"Check When USER Click Menu [My Info]","My Info",8,"andhika tanaka",3000,Passed,"2022-08-02 03:09:15","1. Check When USER Click Menu [My Info]
+","1. 
+","1. Redirect to [My Info Page](https://opensource-demo.orangehrmlive.com/index.php/pim/viewMyDetails)
+","1. Passed
+",,High,Normal,"Not automated",Functional,,"1. ",
+235,"Check When User Click Submenu [Personal Details]","My Info",8,"andhika tanaka",8000,Passed,"2022-08-02 03:09:25","1. Click Submenu [Personal Details]
+","1. 
+","1. Redirect to Personal Details Page
+","1. Passed
+",,High,Normal,"Not automated",Functional,,"1. ",
+236,"Check When USER Edit Existing [Personal Details] in [Personal Details] Page","My Info",8,"andhika tanaka",123000,Passed,"2022-08-02 06:37:24","1. Click Button [Edit]
+2. Fill Edit [Personal Details] Form
+3. Click Button [Save]
+","1. 
+2. Middle Name : Mouris
+3. 
+","1. 
+2. 
+3. * Data is saved
+* Page Reload
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+237,"Check When USER Edit [Existing Custom Fields]  in [Personal Details] Page","My Info",8,"andhika tanaka",67000,Passed,"2022-08-02 06:40:33","1. Click Button [Edit]
+2. Fill Edit [Custom Fields] Form
+3. Click Button [Save]
+","1. 
+2. Blood Type : A
+3. 
+","1. 
+2. 
+3. * Data is saved
+* Page Reload
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+238,"Check When USER Add New [Attachments] in [Personal Details] Page","My Info",8,"andhika tanaka",68000,Passed,"2022-08-02 06:41:34","1. Click Button [Add]
+2. Select File Attachment
+3. Click Button [Upload]
+","1. 
+2. 
+3. 
+","1. 
+2. 
+3. * Data is saved
+* Page Reload
+* Uploaded Attachment in the list
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+239,"Check When USER Download Existing [Attachments] in [Personal Details] Page","My Info",8,"andhika tanaka",36000,Passed,"2022-08-02 06:42:13","1. Click File Name
+","1. 
+","1. File is being downloaded
+","1. Passed
+",,High,Normal,"Not automated",Functional,,"1. ",
+283,"Check When USER Edit Existing [Attachments] in [Personal Details] Page","My Info",8,"andhika tanaka",76000,Passed,"2022-08-02 06:43:32","1. Click Edit
+2. Replace File
+3. Click Button [Upload]
+","1. 
+2. 
+3. 
+","1. 
+2. 
+3. * Data is saved
+* Page Reload
+* Edited Attachment in the list
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+240,"Check When USER Delete Existing [Attachments] in [Personal Details] Page","My Info",8,"andhika tanaka",50000,Passed,"2022-08-02 06:44:25","1. Check Checkbox on the left of File Name
+2. Click Button [Delete]
+","1. 
+2. 
+","1. 
+2. * Data is deleted
+* Page Reload
+* Deleted Attachment removed from the list
+","1. Passed
+2. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. ",
+241,"Check When USER Click Submenu [Contact Details]","My Info",8,"andhika tanaka",4000,Passed,"2022-08-02 03:09:36","1. Click Submenu [Contact Details]
+","1. 
+","1. Redirect to Contact Details Page
+","1. Passed
+",,High,Normal,"Not automated",Functional,,"1. ",
+242,"Check When USER Edit Existing [Contact Details] in [Contact Details] Page","My Info",8,"andhika tanaka",59000,Passed,"2022-08-02 07:03:22","1. Click Button [Edit]
+2. Fill Edit [Contact Details] Form
+3. Click Button [Save]
+","1. 
+2. Mobile : 123456789
+3. 
+","1. 
+2. 
+3. * Data is saved
+* Page Reload
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+243,"Check When USER Add New [Attachments] in [Contact Details] Page","My Info",8,"andhika tanaka",92000,Passed,"2022-08-02 07:04:57","1. Click Button [Add]
+2. Select File Attachment
+3. Click Button [Upload]
+","1. 
+2. 
+3. 
+","1. 
+2. 
+3. * Data is saved
+* Page Reload
+* Uploaded Attachment in the list
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+282,"Check When USER Download Existing [Attachments] in [Contact Details] Page","My Info",8,"andhika tanaka",39000,Passed,"2022-08-02 07:07:22","1. Click File Name
+","1. 
+","1. File is being downloaded
+","1. Passed
+",,High,Normal,"Not automated",Functional,,"1. ",
+284,"Check When USER Edit Existing [Attachments] in [Contact Details] Page","My Info",8,"andhika tanaka",67000,Passed,"2022-08-02 07:08:31","1. Click Edit
+2. Replace File
+3. Click Button [Upload]
+","1. 
+2. 
+3. 
+","1. 
+2. 
+3. * Data is saved
+* Page Reload
+* Edited Attachment in the list
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+285,"Check When USER Delete Existing [Attachments] in [Contact Details] Page","My Info",8,"andhika tanaka",49000,Passed,"2022-08-02 07:09:23","1. Check Checkbox on the left of File Name
+2. Click Button [Delete]
+","1. 
+2. 
+","1. 
+2. * Data is deleted
+* Page Reload
+* Deleted Attachment removed from the list
+","1. Passed
+2. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. ",
+244,"Check When User Click Submenu [Emergency Contacts]","My Info",8,"andhika tanaka",2000,Passed,"2022-08-02 03:09:44","1. Click Submenu [Emergency Contacts]
+","1. 
+","1. Redirect to Emergency Contacts Page
+","1. Passed
+",,High,Normal,"Not automated",Functional,,"1. ",
+245,"Check When USER Add New [Emergency Contacts]","My Info",8,"andhika tanaka",100000,Passed,"2022-08-02 07:37:45","1. Click Button [Add]
+2. Fill Add [Emergency Contact] Form
+3. Click Button [Save]
+","1. 
+2. * Name : Therese
+* Relationship : Mother
+* Mobile : 081233456789
+3. 
+","1. 
+2. 
+3. * Data is saved
+* Reload Page
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+245,"Check When USER Add New [Emergency Contacts]","My Info",8,"andhika tanaka",105000,Passed,"2022-08-02 07:37:51","1. Click Button [Add]
+2. Fill Add [Emergency Contact] Form
+3. Click Button [Save]
+","1. 
+2. * Name : Therese
+* Relationship : Mother
+* Mobile : 081233456789
+3. 
+","1. 
+2. 
+3. * Data is saved
+* Reload Page
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+246,"Check When USER Edit Existing [Emergency Contacts]","My Info",8,"andhika tanaka",61000,Passed,"2022-08-02 07:38:57","1. Click Name from List
+2. Fill Edit [Emergency Contacts] Form
+3. Click Button [Save]
+","1. 
+2. * Name : Theresa
+3. 
+","1. 
+2. 
+3. * Data is saved
+* Reload Page
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+247,"Check When USER Delete Existing [Emergency Contacts]","My Info",8,"andhika tanaka",110000,Passed,"2022-08-02 07:40:50","1. Check the Checkbox on the left of [Name]
+2. Click Button [Delete]
+","1. 
+2. 
+","1. 
+2. * Successfully delete existing data
+* Reload Page
+","1. Passed
+2. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. ",
+248,"Check When USER Add New [Attachments] in [Emergency Contacts] Page","My Info",8,"andhika tanaka",94000,Passed,"2022-08-02 07:42:27","1. Click Button [Add]
+2. Select File Attachment
+3. Click Button [Upload]
+","1. 
+2. 
+3. 
+","1. 
+2. 
+3. * Data is saved
+* Page Reload
+* Uploaded Attachment in the list
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+286,"Check When USER Download Existing [Attachments] in [Emergency Contacts] Page","My Info",8,"andhika tanaka",107000,Passed,"2022-08-02 07:44:17","1. Click File Name
+","1. 
+","1. File is being downloaded
+","1. Passed
+",,High,Normal,"Not automated",Functional,,"1. ",
+287,"Check When USER Edit Existing [Attachments] in [Emergency Contacts] Page","My Info",8,"andhika tanaka",55000,Passed,"2022-08-02 07:45:16","1. Click Edit
+2. Replace File
+3. Click Button [Upload]
+","1. 
+2. 
+3. 
+","1. 
+2. 
+3. * Data is saved
+* Page Reload
+* Edited Attachment in the list
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+288,"Check When USER Delete Existing [Attachments] in [Emergency Contacts] Page","My Info",8,"andhika tanaka",40000,Passed,"2022-08-02 07:45:59","1. Check Checkbox on the left of File Name
+2. Click Button [Delete]
+","1. 
+2. 
+","1. 
+2. * Data is deleted
+* Page Reload
+* Deleted Attachment removed from the list
+","1. Passed
+2. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. ",
+249,"Check When USER Click Submenu [Dependents]","My Info",8,"andhika tanaka",3000,Passed,"2022-08-02 03:10:04","1. Click Menu [Dependents]
+","1. 
+","1. Redirect to Dependents Page
+","1. Passed
+",,High,Normal,"Not automated",Functional,,"1. ",
+250,"Check When USER Add New [Dependents]","My Info",8,"andhika tanaka",56000,Passed,"2022-08-02 07:46:58","1. Click Button [Add]
+2. Fill Add [Dependent] Form
+3. Click Button [Save]
+","1. 
+2. * Name : Michael
+* Relationship : Child
+3. 
+","1. 
+2. 
+3. * Data is saved
+* Reload Page
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+251,"Check When USER Edit Existing [Dependents]","My Info",8,"andhika tanaka",96000,Passed,"2022-08-02 07:48:38","1. Click Name from List
+2. Fill Edit [Dependents] Form
+3. Click Button [Save]
+","1. 
+2. Name : Michaelis
+3. 
+","1. 
+2. 
+3. * Data is saved
+* Reload Page
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+252,"Check When USER Delete Existing [Dependents]","My Info",8,"andhika tanaka",41000,Passed,"2022-08-02 07:49:23","1. Check the Checkbox on the left of [Name]
+2. Click Button [Delete]
+","1. 
+2. 
+","1. 
+2. * Successfully delete existing data
+* Reload Page
+","1. Passed
+2. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. ",
+253,"Check When USER Add New [Attachments] in [Dependents] Page","My Info",8,"andhika tanaka",66000,Passed,"2022-08-02 07:50:32","1. Click Button [Add]
+2. Select File Attachment
+3. Click Button [Upload]
+","1. 
+2. 
+3. 
+","1. 
+2. 
+3. * Data is saved
+* Page Reload
+* Uploaded Attachment in the list
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+289,"Check When USER Download Existing [Attachments] in [Dependents] Page","My Info",8,"andhika tanaka",15000,Passed,"2022-08-02 07:50:51","1. Click File Name
+","1. 
+","1. File is being downloaded
+","1. Passed
+",,High,Normal,"Not automated",Functional,,"1. ",
+290,"Check When USER Edit Existing [Attachments] in [Dependents] Page","My Info",8,"andhika tanaka",41000,Passed,"2022-08-02 07:51:38","1. Click Edit
+2. Replace File
+3. Click Button [Upload]
+","1. 
+2. 
+3. 
+","1. 
+2. 
+3. * Data is saved
+* Page Reload
+* Edited Attachment in the list
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+291,"Check When USER Delete Existing [Attachments] in [Dependents] Page","My Info",8,"andhika tanaka",36000,Passed,"2022-08-02 07:52:17","1. Check Checkbox on the left of File Name
+2. Click Button [Delete]
+","1. 
+2. 
+","1. 
+2. * Data is deleted
+* Page Reload
+* Deleted Attachment removed from the list
+","1. Passed
+2. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. ",
+254,"Check When USER Click Submenu [Immigration]","My Info",8,"andhika tanaka",2000,Passed,"2022-08-02 03:10:11","1. Click Submenu [Immigration]
+","1. 
+","1. Redirect to Immigration Page
+","1. Passed
+",,High,Normal,"Not automated",Functional,,"1. ",
+255,"Check When USER Add New [Immigration]","My Info",8,"andhika tanaka",147000,Passed,"2022-08-02 07:58:44","1. Click Button [Add]
+2. Fill Add [Immigration] Form
+3. Click Button [Save]
+","1. 
+2. * Document : Visa
+* Number : 1234123412341234
+3. 
+","1. 
+2. 
+3. * Data is saved
+* Redirect to previous page
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+256,"Check When USER Edit Existing [Immigration]","My Info",8,"andhika tanaka",40000,Passed,"2022-08-02 07:59:21","1. Click Document
+2. Fill Edit [Immigration] Form
+3. Click Button [Save]
+","1. 
+2. 432143214321
+3. 
+","1. 
+2. 
+3. * Data is saved
+* Redirect to previous page
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+257,"Check When USER Delete Existing [Immigration]","My Info",8,"andhika tanaka",25000,Passed,"2022-08-02 07:59:43","1. Check the Checkbox on the left of [Document]
+2. Click Button [Delete]
+","1. 
+2. 
+","1. 
+2. * Successfully delete existing data
+
+
+* Reload Page
+","1. Passed
+2. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. ",
+295,"Check When USER Add New [Attachments] in [Immigration] Page","My Info",8,"andhika tanaka",57000,Passed,"2022-08-02 08:00:35","1. Click Button [Add]
+2. Select File Attachment
+3. Click Button [Upload]
+","1. 
+2. 
+3. 
+","1. 
+2. 
+3. * Data is saved
+* Page Reload
+* Uploaded Attachment in the list
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+292,"Check When USER Download Existing [Attachments] in [Immigration] Page","My Info",8,"andhika tanaka",33000,Passed,"2022-08-02 08:01:07","1. Click File Name
+","1. 
+","1. File is being downloaded
+","1. Passed
+",,High,Normal,"Not automated",Functional,,"1. ",
+293,"Check When USER Edit Existing [Attachments] in [Immigration] Page","My Info",8,"andhika tanaka",64000,Passed,"2022-08-02 08:02:06","1. Click Edit
+2. Replace File
+3. Click Button [Upload]
+","1. 
+2. 
+3. 
+","1. 
+2. 
+3. * Data is saved
+* Page Reload
+* Edited Attachment in the list
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+294,"Check When USER Delete Existing [Attachments] in [Immigration] Page","My Info",8,"andhika tanaka",24000,Passed,"2022-08-02 08:02:27","1. Check Checkbox on the left of File Name
+2. Click Button [Delete]
+","1. 
+2. 
+","1. 
+2. * Data is deleted
+* Page Reload
+* Deleted Attachment removed from the list
+","1. Passed
+2. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. ",
+258,"Check When USER Click Submenu [Job]","My Info",8,"andhika tanaka",2000,Passed,"2022-08-02 03:10:21","1. Click Submenu [Job]
+","1. 
+","1. Redirect to Job Page
+","1. Passed
+",,High,Normal,"Not automated",Functional,,"1. ",
+259,"Check When USER Click Submenu [Salary]","My Info",8,"andhika tanaka",3000,Passed,"2022-08-02 03:10:27","1. Click Submenu [Salary]
+","1. 
+","1. Redirect to Salary Page
+","1. Passed
+",,High,Normal,"Not automated",Functional,,"1. ",
+260,"Check When USER Click Submenu [Tax Exemptions]","My Info",8,"andhika tanaka",2000,Passed,"2022-08-02 03:10:31","1. Click Submenu [Tax Exemptions]
+","1. 
+","1. Redirect to Tax exemptions Page
+","1. Passed
+",,High,Normal,"Not automated",Functional,,"1. ",
+261,"Check When USER Click Submenu [Report-to]","My Info",8,"andhika tanaka",2000,Passed,"2022-08-02 03:10:35","1. Click Submenu [Report-to]
+","1. 
+","1. Redirect to Report-to Page
+","1. Passed
+",,High,Normal,"Not automated",Functional,,"1. ",
+262,"Check When USER Click Submenu [Qualifications]","My Info",8,"andhika tanaka",3000,Passed,"2022-08-02 03:10:40","1. Click Submenu [Qualifications]
+","1. 
+","1. Redirect to Qualifications Page
+","1. Passed
+",,High,Normal,"Not automated",Functional,,"1. ",
+263,"Check When USER Add New [Work Experience] in [Qualifications] Page","My Info",8,"andhika tanaka",182000,Passed,"2022-08-02 08:10:46","1. Click Button [Add]
+2. Fill Add [Work Experience] Form
+3. Click Button [Save]
+","1. 
+2. * Company : YesShop
+* Job Title : Analyst
+3. 
+","1. 
+2. 
+3. * Data is saved
+* Reload Page
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+264,"Check When USER Edit Existing [Work Experience] in [Qualifications] Page","My Info",8,"andhika tanaka",45000,Passed,"2022-08-02 08:11:26","1. Click Company
+2. Fill Add [Work Experience] Form
+3. Click Button [Save]
+","1. 
+2. * Company : Shopyes
+* Job Title : Analyst
+3. 
+","1. 
+2. 
+3. * Data is saved
+* Reload Page
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+265,"Check When USER Delete Existing [Work Experience] in [Qualifications] Page","My Info",8,"andhika tanaka",29000,Passed,"2022-08-02 08:11:53","1. Check the Checkbox on the left of [Company]
+2. Click Button [Delete]
+","1. 
+2. 
+","1. 
+2. * Successfully delete existing data
+* Reload Page
+","1. Passed
+2. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. ",
+266,"Check When USER Add New [Education] in [Qualifications] Page","My Info",8,"andhika tanaka",73000,Passed,"2022-08-02 08:13:37","1. Click Button [Add]
+2. Fill Add [Education] Form
+3. Click Button [Save]
+","1. 
+2. Level ; High School Diploma
+3. 
+","1. 
+2. 
+3. * Data is saved
+* Reload Page
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+267,"Check When USER Edit Existing [Education] in [Qualifications] Page","My Info",8,"andhika tanaka",153000,Passed,"2022-08-02 08:15:30","1. Click Level
+2. Fill Edit [Education] Form
+3. Click Button [Save]
+","1. 
+2. Institute : Public Highschool 1 Denpasar
+3. 
+","1. 
+2. 
+3. * Data is saved
+* Reload Page
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+268,"Check When USER Delete Existing [Education] in [Qualifications] Page","My Info",8,"andhika tanaka",33000,Passed,"2022-08-02 08:15:59","1. Check the Checkbox on the left of [Level]
+2. Click Button [Delete]
+","1. 
+2. 
+","1. 
+2. * Successfully delete existing data
+* Reload Page
+","1. Passed
+2. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. ",
+269,"Check When USER Add New [Skills] in [Qualifications] Page","My Info",8,"andhika tanaka",91000,Passed,"2022-08-02 08:17:44","1. Click Button [Add]
+2. Fill Add [Skills] Form
+3. Click Button [Save]
+","1. 
+2. Skill : C#
+3. 
+","1. 
+2. 
+3. * Data is saved
+* Reload Page
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+270,"Check When USER Edit Existing [Skills] in [Qualifications] Page","My Info",8,"andhika tanaka",63000,Passed,"2022-08-02 08:18:43","1. Click Skill
+2. Fill Edit [Skills] Form
+3. Fill Add [Skills] Form
+","1. 
+2. Years of Experience : 1
+3. 
+","1. 
+2. 
+3. * Data is saved
+* Reload Page
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+271,"Check When USER Delete Existing [Skills] in [Qualifications] Page","My Info",8,"andhika tanaka",33000,Passed,"2022-08-02 08:19:11","1. Check the Checkbox on the left of [Skill]
+2. Click Button [Delete]
+","1. 
+2. 
+","1. 
+2. * Successfully delete existing data
+* Reload Page
+","1. Passed
+2. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. ",
+272,"Check When USER Add New [Languages] in [Qualifications] Page","My Info",8,"andhika tanaka",81000,Passed,"2022-08-02 08:20:27","1. Click Button [Add]
+2. Fill Add [Language] Form
+3. Click Button [Save]
+","1. 
+2. * Language : Chinese
+* Proficiency : Writing
+* Competency : Poor
+3. 
+","1. 
+2. 
+3. * Data is saved
+* Reload Page
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+273,"Check When USER Edit Existing [Languages] in [Qualifications] Page","My Info",8,"andhika tanaka",255000,Passed,"2022-08-02 08:24:38","1. Click language
+2. Fill Edit [Language] Form
+3. Click Button [Save]
+","1. 
+2. Competency : Good
+3. 
+","1. 
+2. 
+3. * Data is saved
+* Reload Page
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+274,"Check When USER Delete Existing [Languages]  in [Qualifications] Page","My Info",8,"andhika tanaka",33000,Passed,"2022-08-02 08:25:15","1. Check the Checkbox on the left of [Language]
+2. Click Button [Delete]
+","1. 
+2. 
+","1. 
+2. * Successfully delete existing data
+* Reload Page
+","1. Passed
+2. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. ",
+275,"Check When USER Add New [License] in [Qualifications] Page","My Info",8,"andhika tanaka",74000,Passed,"2022-08-02 08:26:25","1. Click Button [Add]
+2. Fill Add [License] Form
+3. Click Button [Save]
+","1. 
+2. Licenses Type : Cisco Certified Network Associate (CCNA)
+3. 
+","1. 
+2. 
+3. * Data is saved
+* Reload Page
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+276,"Check When USER Edit Existing [License] in [Qualifications] Page","My Info",8,"andhika tanaka",88000,Passed,"2022-08-02 08:27:48","1. Click License Type
+2. Fill Edit [License] Form
+3. Click Button [Save]
+","1. 
+2. License Number : 4321432143214321
+3. 
+","1. 
+2. 
+3. * Data is saved
+* Reload Page
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+277,"Check When USER Delete Existing [License] in [Qualifications] Page","My Info",8,"andhika tanaka",32000,Passed,"2022-08-02 08:28:16","1. Check the Checkbox on the left of [License Type]
+2. Click Button [Delete]
+","1. 
+2. 
+","1. 
+2. * Successfully delete existing data
+* Reload Page
+","1. Passed
+2. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. ",
+278,"Check When USER Add New [Attachments] in [Qualifications] Page","My Info",8,"andhika tanaka",39000,Passed,"2022-08-02 08:28:51","1. Click Button [Add]
+2. Select File Attachment
+3. Click Button [Upload]
+","1. 
+2. 
+3. 
+","1. 
+2. 
+3. * Data is saved
+* Page Reload
+* Uploaded Attachment in the list
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+279,"Check When USER Download Existing [Attachments] in [Qualifications] Page","My Info",8,"andhika tanaka",20000,Passed,"2022-08-02 08:29:10","1. Click File Name
+","1. 
+","1. File is being downloaded
+","1. Passed
+",,High,Normal,"Not automated",Functional,,"1. ",
+280,"Check When USER Edit Existing [Attachments] in [Qualifications] Page","My Info",8,"andhika tanaka",33000,Passed,"2022-08-02 08:29:38","1. Click Edit
+2. Replace File
+3. Click Button [Upload]
+","1. 
+2. 
+3. 
+","1. 
+2. 
+3. * Data is saved
+* Page Reload
+* Edited Attachment in the list
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+281,"Check When USER Delete Existing [Attachments] in [Qualifications] Page","My Info",8,"andhika tanaka",26000,Passed,"2022-08-02 08:30:03","1. Check Checkbox on the left of File Name
+2. Click Button [Delete]
+","1. 
+2. 
+","1. 
+2. * Data is deleted
+* Page Reload
+* Deleted Attachment removed from the list
+","1. Passed
+2. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. ",
+296,"Check When USER Click Submenu [Memberships]","My Info",8,"andhika tanaka",3000,Passed,"2022-08-02 03:10:53","1. Click Submenu [Memberships]
+","1. 
+","1. Redirect to Memberships Page
+","1. Passed
+",,High,Normal,"Not automated",Functional,,"1. ",
+297,"Check When USER Add New [Memberships]","My Info",8,"andhika tanaka",73000,Passed,"2022-08-02 08:04:45","1. Click Button [Add]
+2. Fill Add [Membership] Form
+3. Click Button [Save]
+","1. 
+2. Membership : ACCA
+3. 
+","1. 
+2. 
+3. * Data is saved
+* Reload Page
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+298,"Check When USER Edit Existing [Memberships]","My Info",8,"andhika tanaka",105000,Passed,"2022-08-02 08:06:28","1. Click Membership
+2. Fill Edit [Membership] Form
+3. Click Button [Save]
+","1. 
+2. Subscription Paid By : Individual
+3. 
+","1. 
+2. 
+3. * Data is saved
+* Reload Page
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+299,"Check When USER Delete Existing [Memberships]","My Info",8,"andhika tanaka",35000,Passed,"2022-08-02 08:07:00","1. Check the Checkbox on the left of [Membership]
+2. Click Button [Delete]
+","1. 
+2. 
+","1. 
+2. * Successfully delete existing data
+* Reload Page
+","1. Passed
+2. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. ",
+300,"Check When USER Add New [Attachments] in [Memberships] Page","My Info",8,"andhika tanaka",35000,Passed,"2022-08-02 08:07:32","1. Click Button [Add]
+2. Select File Attachment
+3. Click Button [Upload]
+","1. 
+2. 
+3. 
+","1. 
+2. 
+3. * Data is saved
+* Page Reload
+* Uploaded Attachment in the list
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+301,"Check When USER Download Existing [Attachments] in [Memberships] Page","My Info",8,"andhika tanaka",21000,Passed,"2022-08-02 08:07:51","1. Click File Name
+","1. 
+","1. File is being downloaded
+","1. Passed
+",,High,Normal,"Not automated",Functional,,"1. ",
+302,"Check When USER Edit Existing [Attachments] in [Memberships] Page","My Info",8,"andhika tanaka",44000,Passed,"2022-08-02 08:08:29","1. Click Edit
+2. Replace File
+3. Click Button [Upload]
+","1. 
+2. 
+3. 
+","1. 
+2. 
+3. * Data is saved
+* Page Reload
+* Edited Attachment in the list
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+303,"Check When USER Delete Existing [Attachments] in [Memberships] Page","My Info",8,"andhika tanaka",27000,Passed,"2022-08-02 08:08:52","1. Check Checkbox on the left of File Name
+2. Click Button [Delete]
+","1. 
+2. 
+","1. 
+2. * Data is deleted
+* Page Reload
+* Deleted Attachment removed from the list
+","1. Passed
+2. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. ",
+323,"Check When USER Click Submenu [My Trackers]","My Trackers",87,"andhika tanaka",2000,Passed,"2022-08-02 03:11:01","1. Click Submenu [My Trackers]
+","1. 
+","1. Redirect to [My Performance Tracker Page](https://opensource-demo.orangehrmlive.com/index.php/performance/viewMyPerformanceTrackerList)
+","1. Passed
+",,High,Normal,"Not automated",Functional,,"1. ",
+324,"Check When USER Viewed [My Trackers] Data","My Trackers",87,"andhika tanaka",125000,Passed,"2022-08-02 06:46:44","1. Click [Employee Trackers] Data From List
+","1. Employee : \<Logged in Account>
+","1. Redirect to \<Logged in Account> Data Detailed Form
+","1. Passed
+",,High,Normal,"Not automated",Functional,,"1. ",
+325,"Check When USER Add Performance Tracker Log in [My Trackers] Data","My Trackers",87,"andhika tanaka",58000,Passed,"2022-08-02 06:47:46","1. Click Button [Add]
+2. Fill Add [My Trackers] Form
+3. Click Button [Save]
+","1. 
+2. * Log : test
+* Achievements : Positive
+* Comment : Good
+3. 
+","1. 
+2. 
+3. * Data is saved
+* Page Reload
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+326,"Check When USER Click Submenu [Employee Trackers]","Employee Trackers",88,"andhika tanaka",3000,Passed,"2022-08-02 03:11:07","1. Click Submenu [Employee Trackers]
+","1. 
+","1. Redirect to [Employee Performances Tracker Page](https://opensource-demo.orangehrmlive.com/index.php/performance/viewEmployeePerformanceTrackerList)
+","1. Passed
+",,High,Normal,"Not automated",Functional,,"1. ",
+327,"Check When USER Viewed [Employee Trackers] Data","Employee Trackers",88,"andhika tanaka",56000,Passed,"2022-08-02 06:48:51","1. Click [Employee Trackers] Data From List
+","1. Employee : Fiona Grace
+","1. Redirect to [Employee Trackers] Data Detailed Form
+","1. Passed
+",,High,Normal,"Not automated",Functional,,"1. ",
+328,"Check When USER Add Performance Tracker Log in [Employee Trackers] Data","Employee Trackers",88,"andhika tanaka",161000,Passed,"2022-08-02 06:51:44","1. Click Button [Add]
+2. Fill Add [Manage Performance Tracker Log] Form
+3. Click Button [Save]
+","1. 
+2. * Log : test
+* Achievements : Positive
+* Comment : Good
+3. 
+","1. 
+2. 
+3. * Data is saved
+* Page Reload
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+329,"Check When USER Click Menu [Dashboard]",Dashboard,9,"andhika tanaka",3000,Passed,"2022-08-02 03:11:17","1. Click Menu [Dashboard]
+","1. 
+","1. Redirect to [Dashboard Page](https://opensource-demo.orangehrmlive.com/index.php/dashboard)
+","1. Passed
+",,High,Normal,"Not automated",Functional,,"1. ",
+330,"Check When USER Click Button [Assign Leave] in [Dashboard] Page",Dashboard,9,"andhika tanaka",6000,Passed,"2022-08-02 03:11:25","1. Click Button [Assign Leave]
+","1. 
+","1. Redirect to [Assign Leave Page](https://opensource-demo.orangehrmlive.com/index.php/leave/assignLeave)
+","1. Passed
+",,High,Normal,"Not automated",Functional,,"1. ",
+331,"Check When USER Click Button [Leave List] in [Dashboard] Page",Dashboard,9,"andhika tanaka",3000,Passed,"2022-08-02 03:11:30","1. Click Button [Leave List]
+","1. 
+","1. Redirect to [Leave List Page](https://opensource-demo.orangehrmlive.com/index.php/leave/viewLeaveList)
+","1. Passed
+",,High,Normal,"Not automated",Functional,,"1. ",
+332,"Check When USER Click Button [Timesheets] in [Dashboard] Page",Dashboard,9,"andhika tanaka",2000,Passed,"2022-08-02 03:11:35","1. Click Button [Timesheets]
+","1. 
+","1. Redirect to [Employee Timesheets Page](https://opensource-demo.orangehrmlive.com/index.php/time/viewEmployeeTimesheet)
+","1. Passed
+",,High,Normal,"Not automated",Functional,,"1. ",
+333,"Check When USER Click Button [Apply Leave] in [Dashboard] Page",Dashboard,9,"andhika tanaka",3000,Passed,"2022-08-02 03:11:40","1. Click Button [Apply Leave]
+","1. 
+","1. Redirect to [Apply Leave Page](https://opensource-demo.orangehrmlive.com/index.php/leave/applyLeave)
+","1. Passed
+",,High,Normal,"Not automated",Functional,,"1. ",
+334,"Check When USER Click Button [My Leave] in [Dashboard] Page",Dashboard,9,"andhika tanaka",4000,Passed,"2022-08-02 03:11:46","1. Click Button [My Leave]
+","1. 
+","1. Redirect to [My Leave Page](https://opensource-demo.orangehrmlive.com/index.php/leave/viewMyLeaveList)
+","1. Passed
+",,High,Normal,"Not automated",Functional,,"1. ",
+335,"Check When USER Click Button [My Timesheets] in [Dashboard] Page",Dashboard,9,"andhika tanaka",3000,Passed,"2022-08-02 03:11:50","1. Click Button [My Timesheets]
+","1. 
+","1. Redirect to [My Timesheets Page](https://opensource-demo.orangehrmlive.com/index.php/time/viewMyTimesheet)
+","1. Passed
+",,High,Normal,"Not automated",Functional,,"1. ",
+336,"Check When USER Click [Pending Leave Requests] List Item in [Dashboard] Page",Dashboard,9,"andhika tanaka",88000,Passed,"2022-08-02 03:48:23","1. Click [Pending Leave Requests] Data From List
+2. Select [Action]
+3. Click Button [Save]
+","1. Paul Collings
+2. 
+3. 
+","1. Redirect to [Leave Requests] Data Details Form
+2. 
+3. * Data is saved
+* Reload Page
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+337,"Check When USER Click Menu [Directory]",Directory,10,"andhika tanaka",2000,Passed,"2022-08-02 03:11:57","1. Click Menu [Directory]
+","1. 
+","1. Redirect to [Directory Page](https://opensource-demo.orangehrmlive.com/index.php/directory/viewDirectory/reset/1)
+","1. Passed
+",,High,Normal,"Not automated",Functional,,"1. ",
+338,"Check When USER Search [Directory Data] Using Name",Directory,10,"andhika tanaka",47000,Passed,"2022-08-02 06:52:46","1. Fill Textbox [Name]
+2. Click Button [Search]
+","1. Name : Admin A
+2. 
+","1. 
+2. [User] with Name Admin A will be shown in the list
+","1. Passed
+2. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. ",
+339,"Check When USER Search [Directory Data] Using Job Title",Directory,10,"andhika tanaka",30000,Passed,"2022-08-02 06:53:19","1. Select [Job Title] from Dropdown Menu
+2. Click Button [Search]
+","1. Job Title : Automation Tester
+2. 
+","1. 
+2. [User] with Job Title Automation Tester will be shown in the list
+","1. Passed
+2. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. ",
+340,"Check When USER Search [Directory Data] Using Location",Directory,10,"andhika tanaka",18000,Passed,"2022-08-02 06:53:42","1. Select [Location] from Dropdown Menu
+2. Click Button [Search]
+","1. Location : United States
+2. 
+","1. 
+2. [User] with Location United States will be shown in the list
+","1. Passed
+2. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. ",
+341,"Check When USER Click Menu [Buzz]",Buzz,11,"andhika tanaka",3000,Passed,"2022-08-02 03:12:03","1. Click Menu [Buzz]
+","1. 
+","1. Redirect to [Buzz Page](https://opensource-demo.orangehrmlive.com/index.php/buzz/viewBuzz)
+","1. Passed
+",,High,Normal,"Not automated",Functional,,"1. ",
+342,"Check When USER Add [Update Status] in [Buzz] Page",Buzz,11,"andhika tanaka",58000,Passed,"2022-08-02 06:55:35","1. Click Update Status
+2. Fill textarea [Status]
+3. Click Button [Post]
+","1. 
+2. Status : test
+3. 
+","1. 
+2. 
+3. * Data is saved
+* Post is shown
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+343,"Check When USER Add [Upload Images] in [Buzz] Page",Buzz,11,"andhika tanaka",135000,Passed,"2022-08-02 06:57:39","1. Click Upload Images
+2. Fill Textbox Comment
+3. Select Image from Computer
+4. Click Button [Post]
+","1. 
+2. Comment : test
+3. 
+4. 
+","1. 
+2. 
+3. 
+4. * Data is saved
+* Post is shown
+","1. Passed
+2. Passed
+3. Passed
+4. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. 
+4. ",
+344,"Check When USER Add [Share Video] in [Buzz] Page",Buzz,11,"andhika tanaka",50000,Passed,"2022-08-02 06:58:36","1. Click Share Video
+2. Fill textbox Paste Video URL
+3. Press Enter
+4. Click Button [Save Video]
+","1. 
+2. Video URL : https://www.youtube.com/watch?v=Yy6zMAOgCXc
+3. 
+4. 
+","1. 
+2. 
+3. Video will be loaded
+4. * Data is saved
+* Post is shown
+","1. Passed
+2. Passed
+3. Passed
+4. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. 
+4. ",
+345,"Check When USER Click Button [Expand] in Existing Post in [Buzz] Page",Buzz,11,"andhika tanaka",20000,Passed,"2022-08-02 06:58:59","1. Click Button [Expand]
+","1. 
+","1. Detailed Post will be shown
+","1. Passed
+",,High,Normal,"Not automated",Functional,,"1. ",
+346,"Check When USER Click Button [Like] in Existing Post in [Buzz] Page",Buzz,11,"andhika tanaka",23000,Passed,"2022-08-02 06:59:25","1. Click Button [Like]
+","1. 
+","1. * Post will be liked
+* Like Button turns orange
+* Like Number will be increased
+","1. Passed
+",,High,Normal,"Not automated",Functional,,"1. ",
+347,"Check When USER Click Button [Unlike] in Existing Post in [Buzz] Page",Buzz,11,"andhika tanaka",23000,Passed,"2022-08-02 06:59:50","1. Click Button [Unlike]
+","1. 
+","1. * Post will be unliked
+* Unlike Button turns orange
+* Unlike Number will be increased
+","1. Passed
+",,High,Normal,"Not automated",Functional,,"1. ",
+348,"Check When USER Click Button [Share] in Existing Post in [Buzz] Page",Buzz,11,"andhika tanaka",97000,Passed,"2022-08-02 07:01:40","1. Click Button [Share]
+2. Fill textbox Comment
+3. Click Button [Share]
+","1. 
+2. 
+3. 
+","1. Share popup is shown
+2. 
+3. * Post will be liked
+* Success Message appear
+* Share Button turns orange
+* Share Number will be increased
+","1. Passed
+2. Passed
+3. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. 
+3. ",
+349,"Check When USER Add [Comment] in Existing Post in [Buzz] Page",Buzz,11,"andhika tanaka",28000,Passed,"2022-08-02 07:02:11","1. Fill textbox [Add Comment]
+2. Click Button [Post]
+","1. Comment : test
+2. 
+","1. 
+2. * Data is saved
+* Comment is shown
+","1. Passed
+2. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. ",
+350,"Check When USER Logout",Logout,12,"andhika tanaka",7000,Passed,"2022-08-02 03:07:20","1. Click Welcome [Username] Text
+2. Click Logout
+","1. 
+2. 
+","1. 
+2. * Succesfully Logout
+* Redirect to [OrangeHRM Login Page](https://opensource-demo.orangehrmlive.com/index.php/auth/login)
+","1. Passed
+2. Passed
+",,High,Normal,"Not automated",Functional,,"1. 
+2. ",

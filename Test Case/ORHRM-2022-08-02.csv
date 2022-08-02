@@ -1,0 +1,1543 @@
+id,title,description,preconditions,postconditions,tags,priority,severity,type,behavior,automation,status,is_flaky,layer,steps_type,steps_actions,steps_result,steps_data,milestone_id,milestone,suite_id,suite_parent_id,suite,suite_without_cases
+,,,,,,,,,,,,,,,,,,,,1,,Login,1
+,,,,,,,,,,,,,,,,,,,,2,,Admin,1
+,,,,,,,,,,,,,,,,,,,,13,2,"User Management",1
+,,,,,,,,,,,,,,,,,,,,20,13,Users,1
+,,,,,,,,,,,,,,,,,,,,14,2,Job,1
+,,,,,,,,,,,,,,,,,,,,21,14,"Job Titles",1
+,,,,,,,,,,,,,,,,,,,,22,14,"Pay Grades",1
+,,,,,,,,,,,,,,,,,,,,23,14,"Employment Status",1
+,,,,,,,,,,,,,,,,,,,,24,14,"Job Categories",1
+,,,,,,,,,,,,,,,,,,,,25,14,"Work Shifts",1
+,,,,,,,,,,,,,,,,,,,,15,2,Organization,1
+,,,,,,,,,,,,,,,,,,,,26,15,"General Information",1
+,,,,,,,,,,,,,,,,,,,,27,15,Locations,1
+,,,,,,,,,,,,,,,,,,,,28,15,Structure,1
+,,,,,,,,,,,,,,,,,,,,16,2,Qualifications,1
+,,,,,,,,,,,,,,,,,,,,29,16,Skills,1
+,,,,,,,,,,,,,,,,,,,,30,16,Education,1
+,,,,,,,,,,,,,,,,,,,,31,16,Licences,1
+,,,,,,,,,,,,,,,,,,,,32,16,Languages,1
+,,,,,,,,,,,,,,,,,,,,33,16,Memberships,1
+,,,,,,,,,,,,,,,,,,,,17,2,Nationalities,1
+,,,,,,,,,,,,,,,,,,,,18,2,"Corporate Branding",1
+,,,,,,,,,,,,,,,,,,,,19,2,Configuration,1
+,,,,,,,,,,,,,,,,,,,,34,19,"Email Configuration",1
+,,,,,,,,,,,,,,,,,,,,35,19,"Email Subscriptions",1
+,,,,,,,,,,,,,,,,,,,,36,19,Localization,1
+,,,,,,,,,,,,,,,,,,,,37,19,"Language Packages",1
+,,,,,,,,,,,,,,,,,,,,38,19,Modules,1
+,,,,,,,,,,,,,,,,,,,,39,19,"Social Media Authentication",1
+,,,,,,,,,,,,,,,,,,,,40,19,"Register OAuth Client",1
+,,,,,,,,,,,,,,,,,,,,3,,PIM,1
+,,,,,,,,,,,,,,,,,,,,41,3,Configuration,1
+,,,,,,,,,,,,,,,,,,,,45,41,"Optional Fields",1
+,,,,,,,,,,,,,,,,,,,,46,41,"Custom Fields",1
+,,,,,,,,,,,,,,,,,,,,47,41,"Data Import",1
+,,,,,,,,,,,,,,,,,,,,48,41,"Reporting Methods",1
+,,,,,,,,,,,,,,,,,,,,49,41,"Termination Reasons",1
+,,,,,,,,,,,,,,,,,,,,42,3,"Employee List",1
+,,,,,,,,,,,,,,,,,,,,43,3,"Add Employee",1
+,,,,,,,,,,,,,,,,,,,,44,3,Reports,1
+,,,,,,,,,,,,,,,,,,,,4,,Leave,1
+,,,,,,,,,,,,,,,,,,,,50,4,Apply,1
+,,,,,,,,,,,,,,,,,,,,51,4,"My Leave",1
+,,,,,,,,,,,,,,,,,,,,52,4,Entitlements,1
+,,,,,,,,,,,,,,,,,,,,53,52,"Add Entitlements",1
+,,,,,,,,,,,,,,,,,,,,54,52,"Employee Entitlements",1
+,,,,,,,,,,,,,,,,,,,,55,52,"My Entitlements",1
+,,,,,,,,,,,,,,,,,,,,56,4,Reports,1
+,,,,,,,,,,,,,,,,,,,,57,56,"Leave Entitlements and Usage Report",1
+,,,,,,,,,,,,,,,,,,,,58,56,"My Leave Entitlements and Usage Report",1
+,,,,,,,,,,,,,,,,,,,,59,4,Configure,1
+,,,,,,,,,,,,,,,,,,,,60,59,"Leave Period",1
+,,,,,,,,,,,,,,,,,,,,61,59,"Leave Types",1
+,,,,,,,,,,,,,,,,,,,,62,59,"Work Week",1
+,,,,,,,,,,,,,,,,,,,,63,59,Holiday,1
+,,,,,,,,,,,,,,,,,,,,64,59,"Leave  List",1
+,,,,,,,,,,,,,,,,,,,,65,59,"Assign Leave",1
+,,,,,,,,,,,,,,,,,,,,5,,Time,1
+,,,,,,,,,,,,,,,,,,,,66,5,Timesheets,1
+,,,,,,,,,,,,,,,,,,,,67,66,"My Timesheets",1
+,,,,,,,,,,,,,,,,,,,,68,66,"Employee Timesheets",1
+,,,,,,,,,,,,,,,,,,,,69,5,Attendance,1
+,,,,,,,,,,,,,,,,,,,,72,69,"My Records",1
+,,,,,,,,,,,,,,,,,,,,73,69,"Punch In/Out",1
+,,,,,,,,,,,,,,,,,,,,74,69,"Employee Records",1
+,,,,,,,,,,,,,,,,,,,,75,69,Configuration,1
+,,,,,,,,,,,,,,,,,,,,70,5,Reports,1
+,,,,,,,,,,,,,,,,,,,,76,70,"Project Reports",1
+,,,,,,,,,,,,,,,,,,,,77,70,"Employee Reports",1
+,,,,,,,,,,,,,,,,,,,,78,70,"Attendance Summary",1
+,,,,,,,,,,,,,,,,,,,,71,5,"Project Info",1
+,,,,,,,,,,,,,,,,,,,,81,71,Customers,1
+,,,,,,,,,,,,,,,,,,,,82,71,Projects,1
+,,,,,,,,,,,,,,,,,,,,6,,Recruitment,1
+,,,,,,,,,,,,,,,,,,,,79,6,Candidates,1
+,,,,,,,,,,,,,,,,,,,,80,6,Vacancies,1
+,,,,,,,,,,,,,,,,,,,,8,,"My Info",1
+,,,,,,,,,,,,,,,,,,,,7,,Performance,1
+,,,,,,,,,,,,,,,,,,,,83,7,Configure,1
+,,,,,,,,,,,,,,,,,,,,84,83,KPIs,1
+,,,,,,,,,,,,,,,,,,,,85,83,Trackers,1
+,,,,,,,,,,,,,,,,,,,,86,7,"Manage Reviews",1
+,,,,,,,,,,,,,,,,,,,,89,86,"Manage Reviews",1
+,,,,,,,,,,,,,,,,,,,,90,86,"My Reviews",1
+,,,,,,,,,,,,,,,,,,,,92,86,"Review List",1
+,,,,,,,,,,,,,,,,,,,,87,7,"My Trackers",1
+,,,,,,,,,,,,,,,,,,,,88,7,"Employee Trackers",1
+,,,,,,,,,,,,,,,,,,,,9,,Dashboard,1
+,,,,,,,,,,,,,,,,,,,,10,,Directory,1
+,,,,,,,,,,,,,,,,,,,,11,,Buzz,1
+,,,,,,,,,,,,,,,,,,,,12,,Logout,1
+1,"Check Login Page","Checking Login Page",,,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Go to [OrangeHRM Login Page](https://opensource-demo.orangehrmlive.com/index.php/auth/login)
+","1. Redirect To Login Page
+","1. 
+",,,1,,Login,
+2,"Check Login Using Valid Username and Password","Check Login Using Valid Data","There is already an account with credential:
+
+* Username : Admin
+* Password : admin123",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Go to [OrangeHRM Login Page](https://opensource-demo.orangehrmlive.com/index.php/auth/login)
+2. Fill Login Form
+3. Click Button [Login]
+","1. Redirect to Login Page
+2. 
+3. Successfully Login and redirect to Dashboard Page
+","1. 
+2. * Username : Admin
+* Password : admin123
+3. 
+",,,1,,Login,
+3,"Check Login Using Invalid Username","Check Login Using Invalid Username",,,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Go to [OrangeHRM Login Page](https://opensource-demo.orangehrmlive.com/index.php/auth/login)
+2. Fill Login Form
+3. Click Button [Login]
+","1. Redirect to Login Page
+2. 
+3. Failed Login and Show Error Message
+","1. 
+2. * Username : FalseAdmin
+* Password : admin123
+3. 
+",,,1,,Login,
+4,"Check Login Using Invalid Password","Check Login Using Valid Username and Invalid Password","There is already an account with credential:
+
+* Username : Admin",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Go to [OrangeHRM Login Page](https://opensource-demo.orangehrmlive.com/index.php/auth/login)
+2. Fill Login Form
+3. Click Button [Login]
+","1. Redirect to Login Page
+2. 
+3. Failed Login and Show Error Message
+","1. 
+2. * Username : Admin
+* Password : admin456
+3. 
+",,,1,,Login,
+5,"Check Login Using Empty Username","Check Login Using Empty Data",,,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Go to [OrangeHRM Login Page](https://opensource-demo.orangehrmlive.com/index.php/auth/login)
+2. Fill Login Form
+3. Click Button [Login]
+","1. Redirect to Login Page
+2. 
+3. Failed Login and Show Error Message
+","1. 
+2. * Password : admin123
+3. 
+",,,1,,Login,
+351,"Check Login Using Empty Password","Check Login Using Empty Data",,,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Go to [OrangeHRM Login Page](https://opensource-demo.orangehrmlive.com/index.php/auth/login)
+2. Fill Login Form
+3. Click Button [Login]
+","1. Redirect to Login Page
+2. 
+3. Failed Login and Show Error Message
+","1. 
+2. * Username : admin
+3. 
+",,,1,,Login,
+7,"Check When USER Click Submenu [Users]","Check When USER Click Submenu [Users]","* USER Already Login With Valid Credential 
+* USER in [OrangeHRM Dashboard Page](https://opensource-demo.orangehrmlive.com/index.php/dashboard)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Submenu [Users]
+","1. Redirected to [Users Page](https://opensource-demo.orangehrmlive.com/index.php/admin/viewSystemUsers)
+","1. 
+",,,20,13,Users,
+8,"Check When USER Search [Users] Data Using Username","Check when USER can search [Users] Data Using Username","* USER Already Login With Valid Credential
+* USER in [Users Page](https://opensource-demo.orangehrmlive.com/index.php/admin/viewSystemUsers)
+* There is [Users] with username ELawrence",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Fill username textbox
+2. Click Button [Search]
+","1. 
+2. [Users] with username ELawrence will be shown in the list
+","1. Username : ELawrence
+2. 
+",,,20,13,Users,
+9,"Check When USER Search [Users] Data Using User Role","Check When USER Search [Users] Data Using User Role","* USER Already Login With Valid Credential
+* USER in [Users Page](https://opensource-demo.orangehrmlive.com/index.php/admin/viewSystemUsers)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Select User Role From Dropdown Menu
+2. Click Button [Search]
+","1. 
+2. [Users] with User Role Admin will be shown in the list
+","1. User Role : Admin
+2. 
+",,,20,13,Users,
+10,"Check When USER Search [Users] Data Using Employee Name","Check When USER Search [Users] Data Using Employee Name","* USER Already Login With Valid Credential
+* USER in [Users Page](https://opensource-demo.orangehrmlive.com/index.php/admin/viewSystemUsers)
+* There is [Users] with Employee Name Eula Lawrence",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Fill Employee Name textbox
+2. Click Button [Search]
+","1. 
+2. [Users] with Employee Name Eula Lawrence will be shown in the list
+","1. Employee Name : Eula Lawrence
+2. 
+",,,20,13,Users,
+11,"Check When USER Search [Users] Data Using Status","Check When USER Search [Users] Data Using Status","* USER Already Login With Valid Credential
+* USER in [Users Page](https://opensource-demo.orangehrmlive.com/index.php/admin/viewSystemUsers)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Select Status From Dropdown Menu
+2. Click Button [Search]
+","1. 
+2. [Users] with Status Enabled will be shown in the list
+","1. Status : Enabled
+2. 
+",,,20,13,Users,
+12,"Check When USER Click Button [Reset] in [Users] Page","Check When USER Click Button [Reset] in [Users] Page","* USER Already Login With Valid Credential
+* USER in [Users Page](https://opensource-demo.orangehrmlive.com/index.php/admin/viewSystemUsers)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Fill Search Form
+2. Click Button [Reset]
+","1. 
+2. Search Form will set all value with default value
+
+* Username : \<empty>
+* User Role : All
+* Employee Name : \<empty>
+* Status : All
+","1. Credentials:
+
+* Username : ELawrence
+* User Role : Admin
+* Employee Name : Eula Lawrence
+* Status : Enable
+2. 
+",,,20,13,Users,
+13,"Check When USER Add New [Users]","Check When USER Add New [Users]","* USER Already Login With Valid Credential
+* USER in [Users Page](https://opensource-demo.orangehrmlive.com/index.php/admin/viewSystemUsers)
+* There is [Employee] with Employee Name Mona Megistus",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Button [Add]
+2. Fill Add User Form
+3. Click Button [Save]
+","1. Redirect to [Add User Page](https://opensource-demo.orangehrmlive.com/index.php/admin/saveSystemUser)
+2. 
+3. * Data is saved
+* Redirect to [Users Page](https://opensource-demo.orangehrmlive.com/index.php/admin/viewSystemUsers)
+","1. 
+2. * User Role : ESS
+* Employee Name : Mona Megistus
+* Username : MonaMeg
+* Status : Enabled
+* Password : admin123
+* Confirm Password : admin123
+3. 
+",,,20,13,Users,
+14,"Check When USER Edit Existing [Users]","Check When USER Edit Existing [Users]","* USER Already Login With Valid Credential
+* USER in [Users Page](https://opensource-demo.orangehrmlive.com/index.php/admin/viewSystemUsers)
+* There is [Users] with Username MonaMeg",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Username
+2. Click Button [Edit]
+3. Fill Edit User Form
+4. Click Button [Save]
+","1. Redirect to User Detail Page
+2. All Field in Edit [Users] Form become Enabled
+3. 
+4. * Data is saved
+* Redirect to [Users Page](https://opensource-demo.orangehrmlive.com/index.php/admin/viewSystemUsers)
+","1. Username : MonaMeg
+2. 
+3. * User Role : Admin
+* Employee Name : Mona Megistus
+* Username : MonaMeg
+* Status : Enabled
+* Password : admin123
+* Confirm Password : admin123
+4. 
+",,,20,13,Users,
+15,"Check When USER Delete Existing [Users]","Check When USER Delete Existing [Users]","* USER Already Login With Valid Credential
+* USER in [Users Page](https://opensource-demo.orangehrmlive.com/index.php/admin/viewSystemUsers)
+* There is [Users] with Username MonaMeg",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Check the Checkbox on the left of Username
+2. Click Button [Delete]
+3. Click Button [OK]
+","1. 
+2. Delete Confirmation Popup Appear
+3. * Succesfully Delete Username : MonaMeg
+* Redirect to [Users Page](https://opensource-demo.orangehrmlive.com/index.php/admin/viewSystemUsers)
+","1. Username : MonaMeg
+2. 
+3. 
+",,,20,13,Users,
+120,"Check When USER Click Submenu [Employee List]","Check When USER Click Submenu [Employee List]","* USER Already Login With Valid Credential
+* USER in [OrangeHRM Dashboard Page](https://opensource-demo.orangehrmlive.com/index.php/dashboard)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Submenu [Employee List]
+","1. Redirected to [Employee List Page](https://opensource-demo.orangehrmlive.com/index.php/pim/viewEmployeeList/reset/1)
+","1. 
+",,,42,3,"Employee List",
+121,"Check When USER Search [Employee List] Data Using Employee Name","Check When USER Search [Employee List] Data Using Employee Name","* USER Already Login With Valid Credential
+* USER in [Employee List Page](https://opensource-demo.orangehrmlive.com/index.php/pim/viewEmployeeList/reset/1)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Fill textbox Employee Name
+2. Click Button [Search]
+","1. 
+2. [Employee] with Employee Name Eula Lawrence will be shown in the list
+","1. Employee Name : Eula Lawrence
+2. 
+",,,42,3,"Employee List",
+122,"Check When USER Search [Employee List] Data Using ID","Check When USER Search [Employee List] Data Using ID","* USER Already Login With Valid Credential
+* USER in [Employee List Page](https://opensource-demo.orangehrmlive.com/index.php/pim/viewEmployeeList/reset/1)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Fill textbox Id
+2. Click Button [Search]
+","1. 
+2. [Employee] with Id 0272 will be shown in the list
+","1. Id : 0272
+2. 
+",,,42,3,"Employee List",
+123,"Check When USER Search [Employee List] Data Using Employment Status","Check When USER Search [Employee List] Data Using Employment Status","* USER Already Login With Valid Credential
+* USER in [Employee List Page](https://opensource-demo.orangehrmlive.com/index.php/pim/viewEmployeeList/reset/1)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Select [Employment Status] from Dropdown Menu
+2. Click Button [Search]
+","1. 
+2. [Employee] with Employment Status Full-Time Probation will be shown in the list
+","1. Employment Status : Full-Time Probation
+2. 
+",,,42,3,"Employee List",
+124,"Check When USER Search [Employee List] Data Using Include","Check When USER Search [Employee List] Data Using Include","* USER Already Login With Valid Credential
+* USER in [Employee List Page](https://opensource-demo.orangehrmlive.com/index.php/pim/viewEmployeeList/reset/1)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Select [Include] from Dropdown Menu
+2. Click Button [Search]
+","1. 
+2. [Employee] with Include Current Employees Only will be shown in the list
+","1. Include : Current Employees Only
+2. 
+",,,42,3,"Employee List",
+125,"Check When USER Search [Employee List] Data Using Supervisor Name","Check When USER Search [Employee List] Data Using Supervisor Name","* USER Already Login With Valid Credential
+* USER in [Employee List Page](https://opensource-demo.orangehrmlive.com/index.php/pim/viewEmployeeList/reset/1)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Fill Textbox [Supervisor Name]
+2. Click Button [Search]
+","1. 
+2. [Employee] with Supervisor Name Aaliyah Haq will be shown in the list
+","1. Supervisor Name : Aaliyah Haq
+2. 
+",,,42,3,"Employee List",
+126,"Check When USER Search [Employee List] Data Using Job Title","Check When USER Search [Employee List] Data Using Job Title","* USER Already Login With Valid Credential
+* USER in [Employee List Page](https://opensource-demo.orangehrmlive.com/index.php/pim/viewEmployeeList/reset/1)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Select [Job Title] from Dropdown Menu
+2. Click Button [Search]
+","1. 
+2. [Employee] with Job Title Automation Tester will be shown in the list
+","1. Job Title : HR Associate
+2. 
+",,,42,3,"Employee List",
+127,"Check When USER Search [Employee List] Data Using Sub Unit","Check When USER Search [Employee List] Data Using Sub Unit","* USER Already Login With Valid Credential
+* USER in [Employee List Page](https://opensource-demo.orangehrmlive.com/index.php/pim/viewEmployeeList/reset/1)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Select [Sub Unit] from Dropdown Menu
+2. Click Button [Search]
+","1. 
+2. [Employee] with Sub Unit Quality Assurance will be shown in the list
+","1. Sub Unit : Quality Assurance
+2. 
+",,,42,3,"Employee List",
+128,"Check When USER Click Button [Reset] in [Employee List] Page","Check When USER Click Button [Reset] in [Employee List] Page","* USER Already Login With Valid Credential
+* USER in [Employee List Page](https://opensource-demo.orangehrmlive.com/index.php/pim/viewEmployeeList/reset/1)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Fill [Employee Information] Form
+2. Click Button [Reset]
+","1. 
+2. [Employee Information] Form will return to default value
+","1. 
+2. 
+",,,42,3,"Employee List",
+129,"Check When USER Add New [Employee List]","Check When USER Add New [Employee List]","* USER Already Login With Valid Credential
+* USER in [Employee List Page](https://opensource-demo.orangehrmlive.com/index.php/pim/viewEmployeeList/reset/1)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Button [Add]
+2. Fill Add [Employee] Form
+3. Click Button [Save]
+","1. 
+2. 
+3. * Data is saved
+* Redirect to Personal Detail Page
+","1. 
+2. * First name : Medusa
+* Last name : Carl
+3. 
+",,,42,3,"Employee List",
+130,"Check When USER Edit Existing [Employee List]","Check When USER Edit Existing [Employee List]","* USER Already Login With Valid Credential
+* USER in [Employee List Page](https://opensource-demo.orangehrmlive.com/index.php/pim/viewEmployeeList/reset/1)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click [Employee] Data From List
+2. Click Button [Edit]
+3. Fill Edit [Employee] Form
+4. Click Button [Save]
+","1. Redirect to [medusa carl] Data Edit Form
+2. 
+3. 
+4. * Data is saved
+* Reload Page
+","1. first name : medusa
+last name : carl
+2. 
+3. * Gender : Female
+* Nationality : Afghan
+4. 
+",,,42,3,"Employee List",
+131,"Check When USER Delete Existing [Employee List]","Check When USER Delete Existing [Employee List]","* USER Already Login With Valid Credential
+* USER in [Employee List Page](https://opensource-demo.orangehrmlive.com/index.php/pim/viewEmployeeList/reset/1)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Check the Checkbox on the left of [Employee]
+2. Click Button [Delete]
+3. Click Button [OK]
+","1. 
+2. Delete Confirmation Popup Appear
+3. * Successfully delete existing data
+* Return to previous page
+","1. first name : medusa
+last name : carey
+2. 
+3. 
+",,,42,3,"Employee List",
+147,"Check When USER Click Submenu  [Add Entitlements]","Check When USER Click Submenu [Add Entitlements]","* USER Already Login With Valid Credential
+* USER in [OrangeHRM Dashboard Page](https://opensource-demo.orangehrmlive.com/index.php/dashboard)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Submenu [Add Entitlements]
+","1. Redirect to [Add Leave Entitlements Page](https://opensource-demo.orangehrmlive.com/index.php/leave/addLeaveEntitlement)
+","1. 
+",,,53,52,"Add Entitlements",
+148,"Check When USER Add New Entitlements","Check When USER Add New Entitlements","* USER Already Login With Valid Credential
+* USER in [Add Entitlement Page](https://opensource-demo.orangehrmlive.com/index.php/leave/addLeaveEntitlement)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Fill Add [Leave Entitlement] Form
+2. Click Button [Save]
+","1. 
+2. * Data is saved
+* Redirect to [Employee Leave Entitlement](https://opensource-demo.orangehrmlive.com/index.php/leave/viewLeaveEntitlements/savedsearch/1)
+","1. * Employee : Eula Lawrence
+* Leave Type : US - Personal
+* Leave Period : 2022-01-01 - 2022-12-31
+* Entitlements : 12
+2. 
+",,,53,52,"Add Entitlements",
+149,"Check When USER Click Submenu [Employee Entitlements]","Check When USER Click Submenu [Employee Entitlements]","* USER Already Login With Valid Credential
+* USER in [OrangeHRM Dashboard Page](https://opensource-demo.orangehrmlive.com/index.php/dashboard)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Submenu [Employee Entitlements]
+","1. Redirect to [Employee Leave Entitlements Page](https://opensource-demo.orangehrmlive.com/index.php/leave/viewLeaveEntitlements/reset/1)
+","1. 
+",,,54,52,"Employee Entitlements",
+150,"Check When USER Search [Employee Entitlements] Data","Check When USER Search [Employee Entitlements] Data","* USER Already Login With Valid Credential
+* USER in [Employee Entitlement Page](https://opensource-demo.orangehrmlive.com/index.php/leave/viewLeaveEntitlements/reset/1)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Fill the [Leave Entitlement] Search Form
+2. Click Button [Search]
+","1. 
+2. Data that met input data requirement will be shown in the list
+","1. * Employee : Eula Lawrence
+* Leave Type : All
+* Leave Period : 2022-01-01 - 2022-12-31
+2. 
+",,,54,52,"Employee Entitlements",
+151,"Check When USER Add New [Employee Entitlements]","Check When USER Add New [Employee Entitlements]","* USER Already Login With Valid Credential
+* USER in [Employee Entitlement Page](https://opensource-demo.orangehrmlive.com/index.php/leave/viewLeaveEntitlements/reset/1)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Button [Add]
+2. Fill Add [Leave Entitlement] Form
+3. Click Button [Save]
+","1. 
+2. 
+3. * Data is saved
+* Redirect to previous page
+","1. 
+2. * Employee : Eula Lawrence
+* Leave Type : US - Vacation
+* Leave Period : 2022-01-01 - 2022-12-31
+* Entitlements : 12
+3. 
+",,,54,52,"Employee Entitlements",
+152,"Check When USER Edit Existing [Employee Entitlements]","Check When USER Edit Existing [Employee Entitlements]","* USER Already Login With Valid Credential
+* USER in [Employee Entitlement Page](https://opensource-demo.orangehrmlive.com/index.php/leave/viewLeaveEntitlements/reset/1)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click [Leave Entitlement] Data From List
+2. Fill Edit [Leave Entitlement] Form
+3. Click Button [Save]
+","1. Redirect to [Leave Entitlement] Data Edit Form
+2. 
+3. * Data is saved
+* Redirect to [Previous Page]
+","1. 
+2. * Leave Period : 2022-01-01 - 2022-12-31
+* Entitlements : 10
+3. 
+",,,54,52,"Employee Entitlements",
+153,"Check When USER Delete Existing [Employee Entitlements]","Check When USER Delete Existing [Employee Entitlements]","* USER Already Login With Valid Credential
+* USER in [Employee Entitlement Page](https://opensource-demo.orangehrmlive.com/index.php/leave/viewLeaveEntitlements/reset/1)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Check the Checkbox on the left of [Employee Entitlements]
+2. Click Button [Delete]
+3. Click Button [OK]
+","1. 
+2. Delete Confirmation Popup Appear
+3. * Successfully delete existing data
+* Return to previous page
+","1. Leave Type : US - Vacation
+2. 
+3. 
+",,,54,52,"Employee Entitlements",
+154,"Check When USER Click Submenu [My Entitlements]","Check When USER Click Submenu [My Entitlements]","* USER Already Login With Valid Credential
+* USER in [OrangeHRM Dashboard Page](https://opensource-demo.orangehrmlive.com/index.php/dashboard)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Submenu [My Entitlements]
+","1. Redirect to [My Leave Entitlements Page](https://opensource-demo.orangehrmlive.com/index.php/leave/viewMyLeaveEntitlements/reset/1)
+","1. 
+",,,55,52,"My Entitlements",
+155,"Check When USER Search [My Entitlements] Data","Check When USER Search [My Entitlements] Data","* USER Already Login With Valid Credential
+* USER in [My Entitlements Page](https://opensource-demo.orangehrmlive.com/index.php/leave/viewMyLeaveEntitlements/reset/1)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Fill the [My Entitlements] Search Form
+2. Click Button [Search]
+","1. 
+2. Data that met input data requirement will be shown in the list
+","1. Leave Type : US - Vacation
+leave Period : 2022-01-01 - 2022-12-31
+2. 
+",,,55,52,"My Entitlements",
+156,"Check When USER Add New [My Entitlements]","Check When USER Add New [My Entitlements]","* USER Already Login With Valid Credential
+* USER in [My Entitlements Page](https://opensource-demo.orangehrmlive.com/index.php/leave/viewMyLeaveEntitlements/reset/1)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Button [Add]
+2. Fill Add [Leave Entitlement] Form
+3. Click Button [Save]
+","1. 
+2. 
+3. * Data is saved
+* Redirect to previous page
+","1. 
+2. * Employee : Eula Lawrence
+* Leave Type : CAN - FMLA
+* Leave Period : 2022-01-01 - 2022-09-02
+* Entitlements : 12
+3. 
+",,,55,52,"My Entitlements",
+157,"Check When USER Edit Existing [My Entitlements]","Check When USER Edit Existing [My Entitlements]","* USER Already Login With Valid Credential
+* USER in [My Entitlements Page](https://opensource-demo.orangehrmlive.com/index.php/leave/viewMyLeaveEntitlements/reset/1)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click [Leave Entitlement] Data From List
+2. Click Button [Edit]
+3. Fill Edit [Leave Entitlement] Form
+4. Click Button [Save]
+","1. Redirect to [Leave Entitlement] Data Edit Form
+2. 
+3. 
+4. * Data is saved
+* Redirect to [Previous Page]
+","1. 
+2. 
+3. * Leave Period : 2022-01-01 - 2022-09-02
+* Entitlements : 11
+4. 
+",,,55,52,"My Entitlements",
+158,"Check When USER Delete Existing [My Entitlements]","Check When USER Delete Existing [My Entitlements]","* USER Already Login With Valid Credential
+* USER in [My Entitlements Page](https://opensource-demo.orangehrmlive.com/index.php/leave/viewMyLeaveEntitlements/reset/1)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Check the Checkbox on the left of [My Entitlements]
+2. Click Button [Delete]
+3. Click Button [OK]
+","1. 
+2. Delete Confirmation Popup Appear
+3. * Successfully delete existing data
+* Return to previous page
+","1. Leave Type : US - Vacation
+2. 
+3. 
+",,,55,52,"My Entitlements",
+181,"Check When USER Click Submenu [My Timesheets]","Check When USER Click Submenu [My Timesheets]","* USER Already Login With Valid Credential
+* USER in [OrangeHRM Dashboard Page](https://opensource-demo.orangehrmlive.com/index.php/dashboard)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Submenu [My Timesheets]
+","1. Redirect to [My Timesheets Page](https://opensource-demo.orangehrmlive.com/index.php/time/viewMyTimesheet)
+","1. 
+",,,67,66,"My Timesheets",
+182,"Check When USER Edit [My Timesheets]","Check When USER Edit [My Timesheets]",,,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Button [Edit]
+2. Fill Edit [Timesheets] Form
+3. Click Button [Save]
+","1. 
+2. 
+3. * Data is saved
+* Redirect to [Previous Page]
+","1. 
+2. * Project : ACME Ltd - ACME Ltd
+* Activity Name : Administration
+* Mon - Fri : 8
+* Sat- Sun : 0
+3. 
+",,,67,66,"My Timesheets",
+183,"Check When USER Click Button [Submit] in [My Timesheets] Page","Check When USER Click Button [Submit] in [My Timesheets] Page",,,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Button Submit
+","1. * Data is Saved
+* Page Reload
+* Status : Submitted
+","1. 
+",,,67,66,"My Timesheets",
+184,"Check When User Click Submenu [Employee Timesheets]","Check When User Click Submenu [Employee Timesheets]","* USER Already Login With Valid Credential
+* USER in [OrangeHRM Dashboard Page](https://opensource-demo.orangehrmlive.com/index.php/dashboard)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Submenu [Employee Timesheets]
+","1. Redirect to [Employee Timesheets Page](https://opensource-demo.orangehrmlive.com/index.php/time/viewEmployeeTimesheet)
+","1. 
+",,,68,66,"Employee Timesheets",
+185,"Check When User Search [Employee Timesheets] Data","Check When User Search [Employee Timesheets] Data","* USER Already Login With Valid Credential
+* USER in [Employee Timesheets Page](https://opensource-demo.orangehrmlive.com/index.php/time/viewEmployeeTimesheet)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Fill Textbox [Employee Name]
+2. Click Button [Search]
+","1. 
+2. [Employee Timesheet] with Employee Name Eula Lawrence will be shown in the list
+","1. Employee Name : Eula Lawrence
+2. 
+",,,68,66,"Employee Timesheets",
+186,"Check When USER View [Employee Timesheets] Data","Check When USER View [Employee Timesheets] Data","* USER Already Login With Valid Credential
+* USER in [Employee Timesheets Page](https://opensource-demo.orangehrmlive.com/index.php/time/viewEmployeeTimesheet)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click [View] on the Right Side of The List
+","1. Redirect to Detailed Timesheets of Employee With Employee Name : Eula Lawrence
+","1. Employee Name : Eula Lawrence
+",,,68,66,"Employee Timesheets",
+187,"Check When USER Edit Viewed [Employee Timesheets]","Check When USER Edit Viewed [Employee Timesheets]","* USER Already Login With Valid Credential
+* USER in Detailed Timesheets of Employee",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Button [Edit]
+2. Fill Edit [name] Form
+3. Click Button [Save]
+","1. 
+2. 
+3. * Data is saved
+* Redirect to [Previous Page]
+","1. 
+2. * Mon - Fri : 10
+* Sat - Sun : 1
+3. 
+",,,68,66,"Employee Timesheets",
+188,"Check When USER Accept Viewed [Employee Timesheets]","Check When USER Accept Viewed [Employee Timesheets]","* USER Already Login With Valid Credential
+* USER in Detailed Timesheets of Employee",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Button [Accept]
+","1. Status changed to [Accepted]
+","1. 
+",,,68,66,"Employee Timesheets",
+189,"Check When USER Reject Viewed [Employee Timesheets]","Check When USER Reject Viewed [Employee Timesheets]","* USER Already Login With Valid Credential
+* USER in Detailed Timesheets of Employee",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Button [Reject]
+","1. Status changed to [Rejected]
+","1. 
+",,,68,66,"Employee Timesheets",
+229,"Check When USER Click Submenu [Vacancies]","Check When USER Click Submenu [Vacancies]","* USER Already Login With Valid Credential
+* USER in [OrangeHRM Dashboard Page](https://opensource-demo.orangehrmlive.com/index.php/dashboard)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Submenu [Vacancies]
+","1. Redirect to [Vacancies Page](https://opensource-demo.orangehrmlive.com/index.php/recruitment/viewJobVacancy)
+","1. 
+",,,80,6,Vacancies,
+230,"Check When USER Search [Vacancies] Data","Check When USER Search [Vacancies] Data","* USER Already Login With Valid Credential
+* USER in [Vacancies Page](https://opensource-demo.orangehrmlive.com/index.php/recruitment/viewJobVacancy)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Fill the [Vacancies] Search Form
+2. Click Button [Search]
+","1. 
+2. Data that met input data requirement will be shown in the list
+","1. Job Title : QA Lead
+Vacancy : Senior QA Lead
+Hiring Manager : All
+Status : All
+2. 
+",,,80,6,Vacancies,
+231,"Check When USER Add New [Vacancies]","Check When USER Add New [Vacancies]","* USER Already Login With Valid Credential
+* USER in [Vacancies Page](https://opensource-demo.orangehrmlive.com/index.php/recruitment/viewJobVacancy)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Button [Add]
+2. Fill Add [Job Vacancy] Form
+3. Click Button [Save]
+","1. 
+2. 
+3. * Data is saved
+* Reload Page
+","1. 
+2. Job Title : Automation Tester
+Vacancy Name : Junior Automation Tester
+Hiring Manager : Admin A
+3. 
+",,,80,6,Vacancies,
+232,"Check When USER Edit Existing [Vacancies]","Check When USER Edit Existing [Vacancies]","* USER Already Login With Valid Credential
+* USER in [Vacancies Page](https://opensource-demo.orangehrmlive.com/index.php/recruitment/viewJobVacancy)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click [Vacancies] Data From List
+2. Click Button [Edit]
+3. Fill Edit [Vacancies] Form
+4. Click Button [Save]
+","1. Redirect to [Vacancies] Data Edit Form
+2. 
+3. 
+4. * Data is saved
+* Reload Page
+","1. Vacancy Name : Junior Software Tester
+2. 
+3. Vacancy Name : Senior Software Tester
+4. 
+",,,80,6,Vacancies,
+233,"Check When USER Delete Existing [Vacancies]","Check When USER Delete Existing [Vacancies]","* USER Already Login With Valid Credential
+* USER in [Vacancies Page](https://opensource-demo.orangehrmlive.com/index.php/recruitment/viewJobVacancy)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Check the Checkbox on the left of [Vacancies]
+2. Click Button [Delete]
+3. Click Button [OK]
+","1. 
+2. Delete Confirmation Popup Appear
+3. * Successfully delete existing data
+* Reload Page
+","1. Vacancy Name : Senior Software Tester
+2. 
+3. 
+",,,80,6,Vacancies,
+234,"Check When USER Click Menu [My Info]","Check When USER Click Menu [My Info]","* USER Already Login With Valid Credential
+* USER in [OrangeHRM Dashboard Page](https://opensource-demo.orangehrmlive.com/index.php/dashboard)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Check When USER Click Menu [My Info]
+","1. Redirect to [My Info Page](https://opensource-demo.orangehrmlive.com/index.php/pim/viewMyDetails)
+","1. 
+",,,8,,"My Info",
+235,"Check When User Click Submenu [Personal Details]","Check When User Click Submenu [Personal Details]","* USER Already Login With Valid Credential
+* USER in [My Info Page](https://opensource-demo.orangehrmlive.com/index.php/pim/viewMyDetails)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Submenu [Personal Details]
+","1. Redirect to Personal Details Page
+","1. 
+",,,8,,"My Info",
+236,"Check When USER Edit Existing [Personal Details] in [Personal Details] Page","Check When USER Edit Existing [Personal Details] in [Personal Details] Page","* USER Already Login With Valid Credential
+* USER in Personal Details Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Button [Edit]
+2. Fill Edit [Personal Details] Form
+3. Click Button [Save]
+","1. 
+2. 
+3. * Data is saved
+* Page Reload
+","1. 
+2. Middle Name : Mouris
+3. 
+",,,8,,"My Info",
+237,"Check When USER Edit [Existing Custom Fields]  in [Personal Details] Page","Check When USER Edit [Existing Custom Fields] in [Personal Details] Page","* USER Already Login With Valid Credential
+* USER in Personal Details Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Button [Edit]
+2. Fill Edit [Custom Fields] Form
+3. Click Button [Save]
+","1. 
+2. 
+3. * Data is saved
+* Page Reload
+","1. 
+2. Blood Type : A
+3. 
+",,,8,,"My Info",
+238,"Check When USER Add New [Attachments] in [Personal Details] Page","Check When USER Add New [Attachments] in [Personal Details] Page","* USER Already Login With Valid Credential
+* USER in Personal Details Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Button [Add]
+2. Select File Attachment
+3. Click Button [Upload]
+","1. 
+2. 
+3. * Data is saved
+* Page Reload
+* Uploaded Attachment in the list
+","1. 
+2. 
+3. 
+",,,8,,"My Info",
+239,"Check When USER Download Existing [Attachments] in [Personal Details] Page","Check When USER Download Existing [Attachments] in [Personal Details] Page","* USER Already Login With Valid Credential
+* USER in Personal Details Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click File Name
+","1. File is being downloaded
+","1. 
+",,,8,,"My Info",
+240,"Check When USER Delete Existing [Attachments] in [Personal Details] Page","Check When USER Delete Existing [Attachments] in [Personal Details] Page","* USER Already Login With Valid Credential
+* USER in Personal Details Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Check Checkbox on the left of File Name
+2. Click Button [Delete]
+","1. 
+2. * Data is deleted
+* Page Reload
+* Deleted Attachment removed from the list
+","1. 
+2. 
+",,,8,,"My Info",
+241,"Check When USER Click Submenu [Contact Details]","Check When USER Click Submenu [Contact Details]","* USER Already Login With Valid Credential
+* USER in [My Info Page](https://opensource-demo.orangehrmlive.com/index.php/pim/viewMyDetails)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Submenu [Contact Details]
+","1. Redirect to Contact Details Page
+","1. 
+",,,8,,"My Info",
+242,"Check When USER Edit Existing [Contact Details] in [Contact Details] Page","Check When USER Edit Existing [Contact Details] in [Contact Details] Page","* USER Already Login With Valid Credential
+* USER in Contact Details Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Button [Edit]
+2. Fill Edit [Contact Details] Form
+3. Click Button [Save]
+","1. 
+2. 
+3. * Data is saved
+* Page Reload
+","1. 
+2. Mobile : 123456789
+3. 
+",,,8,,"My Info",
+243,"Check When USER Add New [Attachments] in [Contact Details] Page","Check When USER Add New [Attachments] in [Contact Details] Page","* USER Already Login With Valid Credential
+* USER in Contact Details Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Button [Add]
+2. Select File Attachment
+3. Click Button [Upload]
+","1. 
+2. 
+3. * Data is saved
+* Page Reload
+* Uploaded Attachment in the list
+","1. 
+2. 
+3. 
+",,,8,,"My Info",
+244,"Check When User Click Submenu [Emergency Contacts]","Check When User Click Submenu [Emergency Contacts]","* USER Already Login With Valid Credential
+* USER in [My Info Page](https://opensource-demo.orangehrmlive.com/index.php/pim/viewMyDetails)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Submenu [Emergency Contacts]
+","1. Redirect to Emergency Contacts Page
+","1. 
+",,,8,,"My Info",
+245,"Check When USER Add New [Emergency Contacts]","Check When USER Add New [Emergency Contacts]","* USER Already Login With Valid Credential
+* USER in Emergency Contacts Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Button [Add]
+2. Fill Add [Emergency Contact] Form
+3. Click Button [Save]
+","1. 
+2. 
+3. * Data is saved
+* Reload Page
+","1. 
+2. * Name : Therese
+* Relationship : Mother
+* Mobile : 081233456789
+3. 
+",,,8,,"My Info",
+246,"Check When USER Edit Existing [Emergency Contacts]","Check When USER Edit Existing [Emergency Contacts]","* USER Already Login With Valid Credential
+* USER in Emergency Contacts Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Name from List
+2. Fill Edit [Emergency Contacts] Form
+3. Click Button [Save]
+","1. 
+2. 
+3. * Data is saved
+* Reload Page
+","1. 
+2. * Name : Theresa
+3. 
+",,,8,,"My Info",
+247,"Check When USER Delete Existing [Emergency Contacts]","Check When USER Delete Existing [Emergency Contacts]","* USER Already Login With Valid Credential
+* USER in Emergency Contacts Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Check the Checkbox on the left of [Name]
+2. Click Button [Delete]
+","1. 
+2. * Successfully delete existing data
+* Reload Page
+","1. 
+2. 
+",,,8,,"My Info",
+248,"Check When USER Add New [Attachments] in [Emergency Contacts] Page","Check When USER Add New [Attachments] in [Emergency Contacts] Page","* USER Already Login With Valid Credential
+* USER in Emergency Contacts Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Button [Add]
+2. Select File Attachment
+3. Click Button [Upload]
+","1. 
+2. 
+3. * Data is saved
+* Page Reload
+* Uploaded Attachment in the list
+","1. 
+2. 
+3. 
+",,,8,,"My Info",
+249,"Check When USER Click Submenu [Dependents]","Check When USER Click Submenu [Dependents]","* USER Already Login With Valid Credential
+* USER in [My Info Page](https://opensource-demo.orangehrmlive.com/index.php/pim/viewMyDetails)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Menu [Dependents]
+","1. Redirect to Dependents Page
+","1. 
+",,,8,,"My Info",
+250,"Check When USER Add New [Dependents]","Check When USER Add New [Dependents]","* USER Already Login With Valid Credential
+* USER in Dependents Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Button [Add]
+2. Fill Add [Dependent] Form
+3. Click Button [Save]
+","1. 
+2. 
+3. * Data is saved
+* Reload Page
+","1. 
+2. * Name : Michael
+* Relationship : Child
+3. 
+",,,8,,"My Info",
+251,"Check When USER Edit Existing [Dependents]","Check When USER Edit Existing [Dependents]","* USER Already Login With Valid Credential
+* USER in Dependents Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Name from List
+2. Fill Edit [Dependents] Form
+3. Click Button [Save]
+","1. 
+2. 
+3. * Data is saved
+* Reload Page
+","1. 
+2. Name : Michaelis
+3. 
+",,,8,,"My Info",
+252,"Check When USER Delete Existing [Dependents]","Check When USER Delete Existing [Dependents]","* USER Already Login With Valid Credential
+* USER in Dependents Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Check the Checkbox on the left of [Name]
+2. Click Button [Delete]
+","1. 
+2. * Successfully delete existing data
+* Reload Page
+","1. 
+2. 
+",,,8,,"My Info",
+253,"Check When USER Add New [Attachments] in [Dependents] Page","Check When USER Add New [Attachments] in [Dependents] Page","* USER Already Login With Valid Credential
+* USER in Dependents Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Button [Add]
+2. Select File Attachment
+3. Click Button [Upload]
+","1. 
+2. 
+3. * Data is saved
+* Page Reload
+* Uploaded Attachment in the list
+","1. 
+2. 
+3. 
+",,,8,,"My Info",
+254,"Check When USER Click Submenu [Immigration]","Check When USER Click Submenu [Immigration]","* USER Already Login With Valid Credential
+* USER in [My Info Page](https://opensource-demo.orangehrmlive.com/index.php/pim/viewMyDetails)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Submenu [Immigration]
+","1. Redirect to Immigration Page
+","1. 
+",,,8,,"My Info",
+255,"Check When USER Add New [Immigration]","Check When USER Add New [Immigration]","* USER Already Login With Valid Credential
+* USER in Immigration Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Button [Add]
+2. Fill Add [Immigration] Form
+3. Click Button [Save]
+","1. 
+2. 
+3. * Data is saved
+* Redirect to previous page
+","1. 
+2. * Document : Visa
+* Number : 1234123412341234
+3. 
+",,,8,,"My Info",
+256,"Check When USER Edit Existing [Immigration]","Check When USER Edit Existing [Immigration]","* USER Already Login With Valid Credential
+* USER in Immigration Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Document
+2. Fill Edit [Immigration] Form
+3. Click Button [Save]
+","1. 
+2. 
+3. * Data is saved
+* Redirect to previous page
+","1. 
+2. 432143214321
+3. 
+",,,8,,"My Info",
+257,"Check When USER Delete Existing [Immigration]","Check When USER Delete Existing [Immigration]","* USER Already Login With Valid Credential
+* USER in Immigration Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Check the Checkbox on the left of [Document]
+2. Click Button [Delete]
+","1. 
+2. * Successfully delete existing data
+
+
+* Reload Page
+","1. 
+2. 
+",,,8,,"My Info",
+258,"Check When USER Click Submenu [Job]","Check When USER Click Submenu [Job]","* USER Already Login With Valid Credential
+* USER in [My Info Page](https://opensource-demo.orangehrmlive.com/index.php/pim/viewMyDetails)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Submenu [Job]
+","1. Redirect to Job Page
+","1. 
+",,,8,,"My Info",
+259,"Check When USER Click Submenu [Salary]","Check When USER Click Submenu [Salary]","* USER Already Login With Valid Credential
+* USER in [My Info Page](https://opensource-demo.orangehrmlive.com/index.php/pim/viewMyDetails)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Submenu [Salary]
+","1. Redirect to Salary Page
+","1. 
+",,,8,,"My Info",
+260,"Check When USER Click Submenu [Tax Exemptions]","Check When USER Click Submenu [Tax Exemptions]","* USER Already Login With Valid Credential
+* USER in [My Info Page](https://opensource-demo.orangehrmlive.com/index.php/pim/viewMyDetails)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Submenu [Tax Exemptions]
+","1. Redirect to Tax exemptions Page
+","1. 
+",,,8,,"My Info",
+261,"Check When USER Click Submenu [Report-to]","Check When USER Click Submenu [Report-to]","* USER Already Login With Valid Credential
+* USER in [My Info Page](https://opensource-demo.orangehrmlive.com/index.php/pim/viewMyDetails)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Submenu [Report-to]
+","1. Redirect to Report-to Page
+","1. 
+",,,8,,"My Info",
+262,"Check When USER Click Submenu [Qualifications]","Check When USER Click Submenu [Qualifications]","* USER Already Login With Valid Credential
+* USER in [My Info Page](https://opensource-demo.orangehrmlive.com/index.php/pim/viewMyDetails)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Submenu [Qualifications]
+","1. Redirect to Qualifications Page
+","1. 
+",,,8,,"My Info",
+263,"Check When USER Add New [Work Experience] in [Qualifications] Page","Check When USER Add New [Work Experience] in [Qualifications] Page","* USER Already Login With Valid Credential
+* USER in Qualifications Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Button [Add]
+2. Fill Add [Work Experience] Form
+3. Click Button [Save]
+","1. 
+2. 
+3. * Data is saved
+* Reload Page
+","1. 
+2. * Company : YesShop
+* Job Title : Analyst
+3. 
+",,,8,,"My Info",
+264,"Check When USER Edit Existing [Work Experience] in [Qualifications] Page","Check When USER Edit Existing [Work Experience] in [Qualifications] Page","* USER Already Login With Valid Credential
+* USER in Qualifications Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Company
+2. Fill Add [Work Experience] Form
+3. Click Button [Save]
+","1. 
+2. 
+3. * Data is saved
+* Reload Page
+","1. 
+2. * Company : Shopyes
+* Job Title : Analyst
+3. 
+",,,8,,"My Info",
+265,"Check When USER Delete Existing [Work Experience] in [Qualifications] Page","Check When USER Edit Existing [Work Experience] in [Qualifications] Page","* USER Already Login With Valid Credential
+* USER in Qualifications Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Check the Checkbox on the left of [Company]
+2. Click Button [Delete]
+","1. 
+2. * Successfully delete existing data
+* Reload Page
+","1. 
+2. 
+",,,8,,"My Info",
+266,"Check When USER Add New [Education] in [Qualifications] Page","Check When USER Add New [Education] in [Qualifications] Page","* USER Already Login With Valid Credential
+* USER in Qualifications Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Button [Add]
+2. Fill Add [Education] Form
+3. Click Button [Save]
+","1. 
+2. 
+3. * Data is saved
+* Reload Page
+","1. 
+2. Level ; High School Diploma
+3. 
+",,,8,,"My Info",
+267,"Check When USER Edit Existing [Education] in [Qualifications] Page","Check When USER Edit Existing [Education] in [Qualifications] Page","* USER Already Login With Valid Credential
+* USER in Qualifications Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Level
+2. Fill Edit [Education] Form
+3. Click Button [Save]
+","1. 
+2. 
+3. * Data is saved
+* Reload Page
+","1. 
+2. Institute : Public Highschool 1 Denpasar
+3. 
+",,,8,,"My Info",
+268,"Check When USER Delete Existing [Education] in [Qualifications] Page","Check When USER Delete Existing [Education] in [Qualifications] Page","* USER Already Login With Valid Credential
+* USER in Qualifications Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Check the Checkbox on the left of [Level]
+2. Click Button [Delete]
+","1. 
+2. * Successfully delete existing data
+* Reload Page
+","1. 
+2. 
+",,,8,,"My Info",
+269,"Check When USER Add New [Skills] in [Qualifications] Page","Check When USER Add New [Skills] in [Qualifications] Page","* USER Already Login With Valid Credential
+* USER in Qualifications Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Button [Add]
+2. Fill Add [Skills] Form
+3. Click Button [Save]
+","1. 
+2. 
+3. * Data is saved
+* Reload Page
+","1. 
+2. Skill : C#
+3. 
+",,,8,,"My Info",
+270,"Check When USER Edit Existing [Skills] in [Qualifications] Page","Check When USER Edit Existing [Skills] in [Qualifications] Page","* USER Already Login With Valid Credential
+* USER in Qualifications Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Skill
+2. Fill Edit [Skills] Form
+3. Fill Add [Skills] Form
+","1. 
+2. 
+3. * Data is saved
+* Reload Page
+","1. 
+2. Years of Experience : 1
+3. 
+",,,8,,"My Info",
+271,"Check When USER Delete Existing [Skills] in [Qualifications] Page","Check When USER Delete Existing [Skills] in [Qualifications] Page","* USER Already Login With Valid Credential
+* USER in Qualifications Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Check the Checkbox on the left of [Skill]
+2. Click Button [Delete]
+","1. 
+2. * Successfully delete existing data
+* Reload Page
+","1. 
+2. 
+",,,8,,"My Info",
+272,"Check When USER Add New [Languages] in [Qualifications] Page","Check When USER Add New [Languages] in [Qualifications] Page","* USER Already Login With Valid Credential
+* USER in Qualifications Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Button [Add]
+2. Fill Add [Language] Form
+3. Click Button [Save]
+","1. 
+2. 
+3. * Data is saved
+* Reload Page
+","1. 
+2. * Language : Chinese
+* Proficiency : Writing
+* Competency : Poor
+3. 
+",,,8,,"My Info",
+273,"Check When USER Edit Existing [Languages] in [Qualifications] Page","Check When USER Edit Existing [Languages] in [Qualifications] Page","* USER Already Login With Valid Credential
+* USER in Qualifications Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click language
+2. Fill Edit [Language] Form
+3. Click Button [Save]
+","1. 
+2. 
+3. * Data is saved
+* Reload Page
+","1. 
+2. Competency : Good
+3. 
+",,,8,,"My Info",
+274,"Check When USER Delete Existing [Languages]  in [Qualifications] Page","Check When USER Delete Existing [Languages] in [Qualifications] Page","* USER Already Login With Valid Credential
+* USER in Qualifications Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Check the Checkbox on the left of [Language]
+2. Click Button [Delete]
+","1. 
+2. * Successfully delete existing data
+* Reload Page
+","1. 
+2. 
+",,,8,,"My Info",
+275,"Check When USER Add New [License] in [Qualifications] Page","Check When USER Add New [License] in [Qualifications] Page","* USER Already Login With Valid Credential
+* USER in Qualifications Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Button [Add]
+2. Fill Add [License] Form
+3. Click Button [Save]
+","1. 
+2. 
+3. * Data is saved
+* Reload Page
+","1. 
+2. Licenses Type : Cisco Certified Network Associate (CCNA)
+3. 
+",,,8,,"My Info",
+276,"Check When USER Edit Existing [License] in [Qualifications] Page","Check When USER Edit Existing [License] in [Qualifications] Page","* USER Already Login With Valid Credential
+* USER in Qualifications Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click License Type
+2. Fill Edit [License] Form
+3. Click Button [Save]
+","1. 
+2. 
+3. * Data is saved
+* Reload Page
+","1. 
+2. License Number : 4321432143214321
+3. 
+",,,8,,"My Info",
+277,"Check When USER Delete Existing [License] in [Qualifications] Page","Check When USER Delete Existing [License] in [Qualifications] Page","* USER Already Login With Valid Credential
+* USER in Qualifications Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Check the Checkbox on the left of [License Type]
+2. Click Button [Delete]
+","1. 
+2. * Successfully delete existing data
+* Reload Page
+","1. 
+2. 
+",,,8,,"My Info",
+278,"Check When USER Add New [Attachments] in [Qualifications] Page","Check When USER Add New [Attachments] in [Qualifications] Page","* USER Already Login With Valid Credential
+* USER in Qualifications Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Button [Add]
+2. Select File Attachment
+3. Click Button [Upload]
+","1. 
+2. 
+3. * Data is saved
+* Page Reload
+* Uploaded Attachment in the list
+","1. 
+2. 
+3. 
+",,,8,,"My Info",
+279,"Check When USER Download Existing [Attachments] in [Qualifications] Page","Check When USER Download Existing [Attachments] in [Qualifications] Page","* USER Already Login With Valid Credential
+* USER in Qualifications Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click File Name
+","1. File is being downloaded
+","1. 
+",,,8,,"My Info",
+280,"Check When USER Edit Existing [Attachments] in [Qualifications] Page","Check When USER Edit Existing [Attachments] in [Qualifications] Page","* USER Already Login With Valid Credential
+* USER in Qualifications Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Edit
+2. Replace File
+3. Click Button [Upload]
+","1. 
+2. 
+3. * Data is saved
+* Page Reload
+* Edited Attachment in the list
+","1. 
+2. 
+3. 
+",,,8,,"My Info",
+281,"Check When USER Delete Existing [Attachments] in [Qualifications] Page","Check When USER Delete Existing [Attachments] in [Qualifications] Page","* USER Already Login With Valid Credential
+* USER in Qualifications Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Check Checkbox on the left of File Name
+2. Click Button [Delete]
+","1. 
+2. * Data is deleted
+* Page Reload
+* Deleted Attachment removed from the list
+","1. 
+2. 
+",,,8,,"My Info",
+282,"Check When USER Download Existing [Attachments] in [Contact Details] Page","Check When USER Download Existing [Attachments] in [Contact Details] Page","* USER Already Login With Valid Credential
+* USER in Contact Details Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click File Name
+","1. File is being downloaded
+","1. 
+",,,8,,"My Info",
+283,"Check When USER Edit Existing [Attachments] in [Personal Details] Page","Check When USER Edit Existing [Attachments] in [Personal Details] Page","* USER Already Login With Valid Credential
+* USER in Personal Details Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Edit
+2. Replace File
+3. Click Button [Upload]
+","1. 
+2. 
+3. * Data is saved
+* Page Reload
+* Edited Attachment in the list
+","1. 
+2. 
+3. 
+",,,8,,"My Info",
+284,"Check When USER Edit Existing [Attachments] in [Contact Details] Page","Check When USER Edit Existing [Attachments] in [Contact Details] Page","* USER Already Login With Valid Credential
+* USER in Contact Details Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Edit
+2. Replace File
+3. Click Button [Upload]
+","1. 
+2. 
+3. * Data is saved
+* Page Reload
+* Edited Attachment in the list
+","1. 
+2. 
+3. 
+",,,8,,"My Info",
+285,"Check When USER Delete Existing [Attachments] in [Contact Details] Page","Check When USER Delete Existing [Attachments] in [Contact Details] Page","* USER Already Login With Valid Credential
+* USER in Contact Details Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Check Checkbox on the left of File Name
+2. Click Button [Delete]
+","1. 
+2. * Data is deleted
+* Page Reload
+* Deleted Attachment removed from the list
+","1. 
+2. 
+",,,8,,"My Info",
+286,"Check When USER Download Existing [Attachments] in [Emergency Contacts] Page","Check When USER Download Existing [Attachments] in [Emergency Contacts] Page","* USER Already Login With Valid Credential
+* USER in Emergency Contacts Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click File Name
+","1. File is being downloaded
+","1. 
+",,,8,,"My Info",
+287,"Check When USER Edit Existing [Attachments] in [Emergency Contacts] Page","Check When USER Edit Existing [Attachments] in [Emergency Contacts] Page","* USER Already Login With Valid Credential
+* USER in Emergency Contacts Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Edit
+2. Replace File
+3. Click Button [Upload]
+","1. 
+2. 
+3. * Data is saved
+* Page Reload
+* Edited Attachment in the list
+","1. 
+2. 
+3. 
+",,,8,,"My Info",
+288,"Check When USER Delete Existing [Attachments] in [Emergency Contacts] Page","Check When USER Delete Existing [Attachments] in [Emergency Contacts] Page","* USER Already Login With Valid Credential
+* USER in Emergency Contacts Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Check Checkbox on the left of File Name
+2. Click Button [Delete]
+","1. 
+2. * Data is deleted
+* Page Reload
+* Deleted Attachment removed from the list
+","1. 
+2. 
+",,,8,,"My Info",
+289,"Check When USER Download Existing [Attachments] in [Dependents] Page","Check When USER Download Existing [Attachments] in [Dependents] Page","* USER Already Login With Valid Credential
+* USER in Dependents Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click File Name
+","1. File is being downloaded
+","1. 
+",,,8,,"My Info",
+290,"Check When USER Edit Existing [Attachments] in [Dependents] Page","Check When USER Edit Existing [Attachments] in [Dependents] Page","* USER Already Login With Valid Credential
+* USER in Dependents Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Edit
+2. Replace File
+3. Click Button [Upload]
+","1. 
+2. 
+3. * Data is saved
+* Page Reload
+* Edited Attachment in the list
+","1. 
+2. 
+3. 
+",,,8,,"My Info",
+291,"Check When USER Delete Existing [Attachments] in [Dependents] Page","Check When USER Delete Existing [Attachments] in [Dependents] Page","* USER Already Login With Valid Credential
+* USER in Dependents Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Check Checkbox on the left of File Name
+2. Click Button [Delete]
+","1. 
+2. * Data is deleted
+* Page Reload
+* Deleted Attachment removed from the list
+","1. 
+2. 
+",,,8,,"My Info",
+292,"Check When USER Download Existing [Attachments] in [Immigration] Page","Check When USER Download Existing [Attachments] in [Immigration] Page","* USER Already Login With Valid Credential
+* USER in Immigration Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click File Name
+","1. File is being downloaded
+","1. 
+",,,8,,"My Info",
+293,"Check When USER Edit Existing [Attachments] in [Immigration] Page","Check When USER Edit Existing [Attachments] in [Immigration] Page","* USER Already Login With Valid Credential
+* USER in Immigration Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Edit
+2. Replace File
+3. Click Button [Upload]
+","1. 
+2. 
+3. * Data is saved
+* Page Reload
+* Edited Attachment in the list
+","1. 
+2. 
+3. 
+",,,8,,"My Info",
+294,"Check When USER Delete Existing [Attachments] in [Immigration] Page","Check When USER Delete Existing [Attachments] in [Immigration] Page","* USER Already Login With Valid Credential
+* USER in Immigration Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Check Checkbox on the left of File Name
+2. Click Button [Delete]
+","1. 
+2. * Data is deleted
+* Page Reload
+* Deleted Attachment removed from the list
+","1. 
+2. 
+",,,8,,"My Info",
+295,"Check When USER Add New [Attachments] in [Immigration] Page","Check When USER Add New [Attachments] in [Immigration] Page","* USER Already Login With Valid Credential
+* USER in Immigration Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Button [Add]
+2. Select File Attachment
+3. Click Button [Upload]
+","1. 
+2. 
+3. * Data is saved
+* Page Reload
+* Uploaded Attachment in the list
+","1. 
+2. 
+3. 
+",,,8,,"My Info",
+296,"Check When USER Click Submenu [Memberships]","Check When USER Click Submenu [Memberships]","* USER Already Login With Valid Credential
+* USER in [My Info Page](https://opensource-demo.orangehrmlive.com/index.php/pim/viewMyDetails)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Submenu [Memberships]
+","1. Redirect to Memberships Page
+","1. 
+",,,8,,"My Info",
+297,"Check When USER Add New [Memberships]","Check When USER Add New [Memberships]","* USER Already Login With Valid Credential
+* USER in Memberships Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Button [Add]
+2. Fill Add [Membership] Form
+3. Click Button [Save]
+","1. 
+2. 
+3. * Data is saved
+* Reload Page
+","1. 
+2. Membership : ACCA
+3. 
+",,,8,,"My Info",
+298,"Check When USER Edit Existing [Memberships]","Check When USER Edit Existing [Memberships]","* USER Already Login With Valid Credential
+* USER in Memberships Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Membership
+2. Fill Edit [Membership] Form
+3. Click Button [Save]
+","1. 
+2. 
+3. * Data is saved
+* Reload Page
+","1. 
+2. Subscription Paid By : Individual
+3. 
+",,,8,,"My Info",
+299,"Check When USER Delete Existing [Memberships]","Check When USER Delete Existing [Memberships]","* USER Already Login With Valid Credential
+* USER in Memberships Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Check the Checkbox on the left of [Membership]
+2. Click Button [Delete]
+","1. 
+2. * Successfully delete existing data
+* Reload Page
+","1. 
+2. 
+",,,8,,"My Info",
+300,"Check When USER Add New [Attachments] in [Memberships] Page","Check When USER Add New [Attachments] in [Memberships] Page","* USER Already Login With Valid Credential
+* USER in Memberships Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Button [Add]
+2. Select File Attachment
+3. Click Button [Upload]
+","1. 
+2. 
+3. * Data is saved
+* Page Reload
+* Uploaded Attachment in the list
+","1. 
+2. 
+3. 
+",,,8,,"My Info",
+301,"Check When USER Download Existing [Attachments] in [Memberships] Page","Check When USER Download Existing [Attachments] in [Memberships] Page","* USER Already Login With Valid Credential
+* USER in Memberships Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click File Name
+","1. File is being downloaded
+","1. 
+",,,8,,"My Info",
+302,"Check When USER Edit Existing [Attachments] in [Memberships] Page","Check When USER Edit Existing [Attachments] in [Memberships] Page","* USER Already Login With Valid Credential
+* USER in Memberships Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Edit
+2. Replace File
+3. Click Button [Upload]
+","1. 
+2. 
+3. * Data is saved
+* Page Reload
+* Edited Attachment in the list
+","1. 
+2. 
+3. 
+",,,8,,"My Info",
+303,"Check When USER Delete Existing [Attachments] in [Memberships] Page","Check When USER Delete Existing [Attachments] in [Memberships] Page","* USER Already Login With Valid Credential
+* USER in Memberships Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Check Checkbox on the left of File Name
+2. Click Button [Delete]
+","1. 
+2. * Data is deleted
+* Page Reload
+* Deleted Attachment removed from the list
+","1. 
+2. 
+",,,8,,"My Info",
+323,"Check When USER Click Submenu [My Trackers]","Check When USER Click Submenu [My Trackers]","* USER Already Login With Valid Credential
+* USER in [OrangeHRM Dashboard Page](https://opensource-demo.orangehrmlive.com/index.php/dashboard)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Submenu [My Trackers]
+","1. Redirect to [My Performance Tracker Page](https://opensource-demo.orangehrmlive.com/index.php/performance/viewMyPerformanceTrackerList)
+","1. 
+",,,87,7,"My Trackers",
+324,"Check When USER Viewed [My Trackers] Data","Check When USER Viewed [My Trackers] Data","* USER Already Login With Valid Credential
+* USER in [My Performance Tracker Page](https://opensource-demo.orangehrmlive.com/index.php/performance/viewMyPerformanceTrackerList)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click [Employee Trackers] Data From List
+","1. Redirect to \<Logged in Account> Data Detailed Form
+","1. Employee : \<Logged in Account>
+",,,87,7,"My Trackers",
+325,"Check When USER Add Performance Tracker Log in [My Trackers] Data","Check When USER Add Performance Tracker Log in [My Trackers] Data","* USER Already Login With Valid Credential
+* USER in USER in [My Trackers] Data Detailed Form",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Button [Add]
+2. Fill Add [My Trackers] Form
+3. Click Button [Save]
+","1. 
+2. 
+3. * Data is saved
+* Page Reload
+","1. 
+2. * Log : test
+* Achievements : Positive
+* Comment : Good
+3. 
+",,,87,7,"My Trackers",
+326,"Check When USER Click Submenu [Employee Trackers]","Check When USER Click Submenu [Employee Trackers]","* USER Already Login With Valid Credential
+* USER in [OrangeHRM Dashboard Page](https://opensource-demo.orangehrmlive.com/index.php/dashboard)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Submenu [Employee Trackers]
+","1. Redirect to [Employee Performances Tracker Page](https://opensource-demo.orangehrmlive.com/index.php/performance/viewEmployeePerformanceTrackerList)
+","1. 
+",,,88,7,"Employee Trackers",
+327,"Check When USER Viewed [Employee Trackers] Data","Check When USER Viewed [Employee Trackers] Data","* USER Already Login With Valid Credential
+* USER in [Employee Performances Tracker Page](https://opensource-demo.orangehrmlive.com/index.php/performance/viewEmployeePerformanceTrackerList)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click [Employee Trackers] Data From List
+","1. Redirect to [Employee Trackers] Data Detailed Form
+","1. Employee : Fiona Grace
+",,,88,7,"Employee Trackers",
+328,"Check When USER Add Performance Tracker Log in [Employee Trackers] Data","Check When USER Add Performance Tracker Log in [Employee Trackers] Data","* USER Already Login With Valid Credential
+* USER in [Employee Trackers] Data Detailed Form",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Button [Add]
+2. Fill Add [Manage Performance Tracker Log] Form
+3. Click Button [Save]
+","1. 
+2. 
+3. * Data is saved
+* Page Reload
+","1. 
+2. * Log : test
+* Achievements : Positive
+* Comment : Good
+3. 
+",,,88,7,"Employee Trackers",
+329,"Check When USER Click Menu [Dashboard]","Check When USER Click Menu [Dashboard]","* USER Already Login With Valid Credential",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Menu [Dashboard]
+","1. Redirect to [Dashboard Page](https://opensource-demo.orangehrmlive.com/index.php/dashboard)
+","1. 
+",,,9,,Dashboard,
+330,"Check When USER Click Button [Assign Leave] in [Dashboard] Page","Check When USER Click Button [Assign Leave] in [Dashboard] Page","* USER Already Login With Valid Credential
+* USER in [OrangeHRM Dashboard Page](https://opensource-demo.orangehrmlive.com/index.php/dashboard)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Button [Assign Leave]
+","1. Redirect to [Assign Leave Page](https://opensource-demo.orangehrmlive.com/index.php/leave/assignLeave)
+","1. 
+",,,9,,Dashboard,
+331,"Check When USER Click Button [Leave List] in [Dashboard] Page","Check When USER Click Button [Leave List] in [Dashboard] Page","* USER Already Login With Valid Credential
+* USER in [OrangeHRM Dashboard Page](https://opensource-demo.orangehrmlive.com/index.php/dashboard)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Button [Leave List]
+","1. Redirect to [Leave List Page](https://opensource-demo.orangehrmlive.com/index.php/leave/viewLeaveList)
+","1. 
+",,,9,,Dashboard,
+332,"Check When USER Click Button [Timesheets] in [Dashboard] Page","Check When USER Click Button [Timesheets] in [Dashboard] Page","* USER Already Login With Valid Credential
+* USER in [OrangeHRM Dashboard Page](https://opensource-demo.orangehrmlive.com/index.php/dashboard)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Button [Timesheets]
+","1. Redirect to [Employee Timesheets Page](https://opensource-demo.orangehrmlive.com/index.php/time/viewEmployeeTimesheet)
+","1. 
+",,,9,,Dashboard,
+333,"Check When USER Click Button [Apply Leave] in [Dashboard] Page","Check When USER Click Button [Apply Leave] in [Dashboard] Page","* USER Already Login With Valid Credential
+* USER in [OrangeHRM Dashboard Page](https://opensource-demo.orangehrmlive.com/index.php/dashboard)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Button [Apply Leave]
+","1. Redirect to [Apply Leave Page](https://opensource-demo.orangehrmlive.com/index.php/leave/applyLeave)
+","1. 
+",,,9,,Dashboard,
+334,"Check When USER Click Button [My Leave] in [Dashboard] Page","Check When USER Click Button [Apply Leave] in [Dashboard] Page","* USER Already Login With Valid Credential
+* USER in [OrangeHRM Dashboard Page](https://opensource-demo.orangehrmlive.com/index.php/dashboard)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Button [My Leave]
+","1. Redirect to [My Leave Page](https://opensource-demo.orangehrmlive.com/index.php/leave/viewMyLeaveList)
+","1. 
+",,,9,,Dashboard,
+335,"Check When USER Click Button [My Timesheets] in [Dashboard] Page","Check When USER Click Button [My Timesheets] in [Dashboard] Page","* USER Already Login With Valid Credential
+* USER in [OrangeHRM Dashboard Page](https://opensource-demo.orangehrmlive.com/index.php/dashboard)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Button [My Timesheets]
+","1. Redirect to [My Timesheets Page](https://opensource-demo.orangehrmlive.com/index.php/time/viewMyTimesheet)
+","1. 
+",,,9,,Dashboard,
+336,"Check When USER Click [Pending Leave Requests] List Item in [Dashboard] Page","Check When USER Click [Pending Leave Requests] List Item in [Dashboard] Page","* USER Already Login With Valid Credential
+* USER in [OrangeHRM Dashboard Page](https://opensource-demo.orangehrmlive.com/index.php/dashboard)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click [Pending Leave Requests] Data From List
+2. Select [Action]
+3. Click Button [Save]
+","1. Redirect to [Leave Requests] Data Details Form
+2. 
+3. * Data is saved
+* Reload Page
+","1. Paul Collings
+2. 
+3. 
+",,,9,,Dashboard,
+337,"Check When USER Click Menu [Directory]","Check When USER Click Menu [Directory]","* USER Already Login With Valid Credential
+* USER in [OrangeHRM Dashboard Page](https://opensource-demo.orangehrmlive.com/index.php/dashboard)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Menu [Directory]
+","1. Redirect to [Directory Page](https://opensource-demo.orangehrmlive.com/index.php/directory/viewDirectory/reset/1)
+","1. 
+",,,10,,Directory,
+338,"Check When USER Search [Directory Data] Using Name","Check When USER Search [Directory Data] Using Name","* USER Already Login With Valid Credential
+* USER in [Directory Page](https://opensource-demo.orangehrmlive.com/index.php/directory/viewDirectory/reset/1)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Fill Textbox [Name]
+2. Click Button [Search]
+","1. 
+2. [User] with Name Admin A will be shown in the list
+","1. Name : Admin A
+2. 
+",,,10,,Directory,
+339,"Check When USER Search [Directory Data] Using Job Title","Check When USER Search [Directory Data] Using Job Title","* USER Already Login With Valid Credential
+* USER in [Directory Page](https://opensource-demo.orangehrmlive.com/index.php/directory/viewDirectory/reset/1)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Select [Job Title] from Dropdown Menu
+2. Click Button [Search]
+","1. 
+2. [User] with Job Title Automation Tester will be shown in the list
+","1. Job Title : Automation Tester
+2. 
+",,,10,,Directory,
+340,"Check When USER Search [Directory Data] Using Location","Check When USER Search [Directory Data] Using Location","* USER Already Login With Valid Credential
+* USER in [Directory Page](https://opensource-demo.orangehrmlive.com/index.php/directory/viewDirectory/reset/1)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Select [Location] from Dropdown Menu
+2. Click Button [Search]
+","1. 
+2. [User] with Location United States will be shown in the list
+","1. Location : United States
+2. 
+",,,10,,Directory,
+341,"Check When USER Click Menu [Buzz]","Check When USER Click Menu [Buzz]","* USER Already Login With Valid Credential
+* USER in [OrangeHRM Dashboard Page](https://opensource-demo.orangehrmlive.com/index.php/dashboard)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Menu [Buzz]
+","1. Redirect to [Buzz Page](https://opensource-demo.orangehrmlive.com/index.php/buzz/viewBuzz)
+","1. 
+",,,11,,Buzz,
+342,"Check When USER Add [Update Status] in [Buzz] Page","Check When USER Add [Update Status] in [Buzz] Page","* USER Already Login With Valid Credential
+* USER in [Buzz Page](https://opensource-demo.orangehrmlive.com/index.php/buzz/viewBuzz)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Update Status
+2. Fill textarea [Status]
+3. Click Button [Post]
+","1. 
+2. 
+3. * Data is saved
+* Post is shown
+","1. 
+2. Status : test
+3. 
+",,,11,,Buzz,
+343,"Check When USER Add [Upload Images] in [Buzz] Page","Check When USER Add [Upload Images] in [Buzz] Page","* USER Already Login With Valid Credential
+* USER in [Buzz Page](https://opensource-demo.orangehrmlive.com/index.php/buzz/viewBuzz)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Upload Images
+2. Fill Textbox Comment
+3. Select Image from Computer
+4. Click Button [Post]
+","1. 
+2. 
+3. 
+4. * Data is saved
+* Post is shown
+","1. 
+2. Comment : test
+3. 
+4. 
+",,,11,,Buzz,
+344,"Check When USER Add [Share Video] in [Buzz] Page","Check When USER Add [Share Video] in [Buzz] Page","* USER Already Login With Valid Credential
+* USER in [Buzz Page](https://opensource-demo.orangehrmlive.com/index.php/buzz/viewBuzz)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Share Video
+2. Fill textbox Paste Video URL
+3. Press Enter
+4. Click Button [Save Video]
+","1. 
+2. 
+3. Video will be loaded
+4. * Data is saved
+* Post is shown
+","1. 
+2. Video URL : https://www.youtube.com/watch?v=Yy6zMAOgCXc
+3. 
+4. 
+",,,11,,Buzz,
+345,"Check When USER Click Button [Expand] in Existing Post in [Buzz] Page","Check When USER Click Button [Expand] in Existing Post in [Buzz] Page","* USER Already Login With Valid Credential
+* USER in [Buzz Page](https://opensource-demo.orangehrmlive.com/index.php/buzz/viewBuzz)
+* There is already Existing Post in Buzz Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Button [Expand]
+","1. Detailed Post will be shown
+","1. 
+",,,11,,Buzz,
+346,"Check When USER Click Button [Like] in Existing Post in [Buzz] Page","Check When USER Click Button [Like] in Existing Post in [Buzz] Page","* USER Already Login With Valid Credential
+* USER in [Buzz Page](https://opensource-demo.orangehrmlive.com/index.php/buzz/viewBuzz)
+* There is already Existing Post in Buzz Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Button [Like]
+","1. * Post will be liked
+* Like Button turns orange
+* Like Number will be increased
+","1. 
+",,,11,,Buzz,
+347,"Check When USER Click Button [Unlike] in Existing Post in [Buzz] Page","Check When USER Click Button [Unlike] in Existing Post in [Buzz] Page","* USER Already Login With Valid Credential
+* USER in [Buzz Page](https://opensource-demo.orangehrmlive.com/index.php/buzz/viewBuzz)
+* There is already Existing Post in Buzz Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Button [Unlike]
+","1. * Post will be unliked
+* Unlike Button turns orange
+* Unlike Number will be increased
+","1. 
+",,,11,,Buzz,
+348,"Check When USER Click Button [Share] in Existing Post in [Buzz] Page","Check When USER Click Button [Share] in Existing Post in [Buzz] Page","* USER Already Login With Valid Credential
+* USER in [Buzz Page](https://opensource-demo.orangehrmlive.com/index.php/buzz/viewBuzz)
+* There is already Existing Post in Buzz Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Button [Share]
+2. Fill textbox Comment
+3. Click Button [Share]
+","1. Share popup is shown
+2. 
+3. * Post will be liked
+* Success Message appear
+* Share Button turns orange
+* Share Number will be increased
+","1. 
+2. 
+3. 
+",,,11,,Buzz,
+349,"Check When USER Add [Comment] in Existing Post in [Buzz] Page","Check When USER Add [Comment] in Existing Post in [Buzz] Page","* USER Already Login With Valid Credential
+* USER in [Buzz Page](https://opensource-demo.orangehrmlive.com/index.php/buzz/viewBuzz)
+* There is already Existing Post in Buzz Page",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Fill textbox [Add Comment]
+2. Click Button [Post]
+","1. 
+2. * Data is saved
+* Comment is shown
+","1. Comment : test
+2. 
+",,,11,,Buzz,
+350,"Check When USER Logout","Check When USER Logout","* USER Already Login With Valid Credential
+* USER in [OrangeHRM Dashboard Page](https://opensource-demo.orangehrmlive.com/index.php/dashboard)",,,high,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Click Welcome [Username] Text
+2. Click Logout
+","1. 
+2. * Succesfully Logout
+* Redirect to [OrangeHRM Login Page](https://opensource-demo.orangehrmlive.com/index.php/auth/login)
+","1. 
+2. 
+",,,12,,Logout,
